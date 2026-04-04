@@ -167,13 +167,6 @@ export default async function StatePage({ params }: Props) {
                     cursor: "pointer",
                     transition: "box-shadow 0.3s",
                   }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.boxShadow =
-                      "0 4px 6px rgba(0, 0, 0, 0.1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
-                  }}
                 >
                   <h2
                     style={{

@@ -223,13 +223,6 @@ export default function Home() {
                     cursor: "pointer",
                     transition: "box-shadow 0.3s",
                   }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.boxShadow =
-                      "0 4px 6px rgba(0, 0, 0, 0.1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
-                  }}
                 >
                   <h3
                     style={{
@@ -298,14 +291,6 @@ export default function Home() {
                   fontWeight: "500",
                   backgroundColor: "#fff",
                   transition: "background-color 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor =
-                    "#f3f4f6";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor =
-                    "#fff";
                 }}
               >
                 {state}

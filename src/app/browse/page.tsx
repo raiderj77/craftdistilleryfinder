@@ -109,16 +109,6 @@ export default function BrowsePage() {
               transition: "all 0.2s",
               fontSize: "1rem",
             }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.backgroundColor = "#f3f4f6";
-              el.style.borderColor = "#2563eb";
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.backgroundColor = "#fff";
-              el.style.borderColor = "#e5e7eb";
-            }}
           >
             {state}
           </Link>
