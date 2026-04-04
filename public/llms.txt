@@ -1,0 +1,13 @@
+# Craft Distillery Finder
+
+> A free directory of craft distilleries across the United States, with info on tours, tastings, and local spirits.
+
+## Browse
+- [Home](https://craftdistilleryfinder.com): Search all craft distilleries
+- [Kentucky](https://craftdistilleryfinder.com/kentucky): Craft distilleries in Kentucky
+- [Tennessee](https://craftdistilleryfinder.com/tennessee): Craft distilleries in Tennessee
+
+## About
+- [About](https://craftdistilleryfinder.com/about): About this directory
+- [Privacy](https://craftdistilleryfinder.com/privacy): Privacy policy
+- [Contact](https://craftdistilleryfinder.com/contact): Contact us
