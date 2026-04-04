@@ -1,112 +1,736 @@
 [
   {
-    "name": "Buffalo Trace Distillery",
-    "slug": "buffalo-trace-distillery",
-    "state": "Kentucky",
-    "stateSlug": "kentucky",
-    "city": "Frankfort",
-    "lat": 38.2009,
-    "lng": -84.8733,
-    "description": "One of the oldest distilleries in America, Buffalo Trace produces premium bourbon with a legacy spanning over 200 years. Their craft spirits showcase traditional techniques and innovative approaches.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Gift shop"]
-  },
-  {
-    "name": "Jack Daniel's Distillery",
-    "slug": "jack-daniels-distillery",
-    "state": "Tennessee",
-    "stateSlug": "tennessee",
-    "city": "Lynchburg",
-    "lat": 35.2849,
-    "lng": -86.4778,
-    "description": "Historic Tennessee whiskey distillery famous for their charcoal mellowing process. Experience the craft behind one of the world's most recognized bourbon brands.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Event space", "Gift shop"]
-  },
-  {
-    "name": "Balcones Distilling",
-    "slug": "balcones-distilling",
-    "state": "Texas",
-    "stateSlug": "texas",
-    "city": "Waco",
-    "lat": 31.5497,
-    "lng": -97.1466,
-    "description": "Award-winning craft distillery in Texas producing artisanal whiskey, rum, and other premium spirits. Known for innovative flavor profiles and sustainable practices.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Cocktail bar", "Event space"]
-  },
-  {
-    "name": "Breckenridge Distillery",
-    "slug": "breckenridge-distillery",
-    "state": "Colorado",
-    "stateSlug": "colorado",
-    "city": "Breckenridge",
-    "lat": 39.4817,
-    "lng": -106.3413,
-    "description": "High-altitude craft distillery in the Rocky Mountains producing bourbon, gin, and whiskey with mountain spring water. Experience world-class spirits in a scenic setting.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Cocktail bar", "Dog-friendly patio"]
-  },
-  {
-    "name": "New Riff Distillery",
-    "slug": "new-riff-distillery",
-    "state": "Kentucky",
-    "stateSlug": "kentucky",
-    "city": "Newport",
-    "lat": 39.0839,
-    "lng": -84.4880,
-    "description": "Craft distillery producing 100% straight bourbon whiskey using traditional methods and locally-sourced grains. Known for their commitment to quality and transparency.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Private tastings available"]
-  },
-  {
-    "name": "Willamette Valley Distillery",
-    "slug": "willamette-valley-distillery",
-    "state": "Oregon",
-    "stateSlug": "oregon",
-    "city": "Salem",
-    "lat": 44.9443,
-    "lng": -123.2949,
-    "description": "Oregon craft distillery specializing in whiskey and spirits made from Pacific Northwest ingredients. Award-winning spirits in a family-friendly tasting room.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Gift shop", "Dog-friendly patio"]
-  },
-  {
-    "name": "Kings County Distillery",
-    "slug": "kings-county-distillery",
+    "name": "The Hudson House & Distillery",
+    "slug": "the-hudson-house-distillery",
     "state": "New York",
     "stateSlug": "new-york",
-    "city": "Brooklyn",
-    "lat": 40.6782,
-    "lng": -73.9442,
-    "description": "Urban craft distillery in Brooklyn producing whiskey, bourbon, and specialty spirits. Tour their historic facility and taste innovative craft spirits.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Cocktail bar", "Event space"]
+    "city": "",
+    "lat": 41.784748,
+    "lng": -73.958743,
+    "description": "The Hudson House & Distillery is a craft distillery in New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
   },
   {
-    "name": "Watershed Distillery",
-    "slug": "watershed-distillery",
+    "name": "Eagle Cliffs Distillery",
+    "slug": "eagle-cliffs-distillery",
+    "state": "Washington",
+    "stateSlug": "washington",
+    "city": "",
+    "lat": 46.192989,
+    "lng": -123.175563,
+    "description": "Eagle Cliffs Distillery is a craft distillery in Washington. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "The Reserve",
+    "slug": "the-reserve",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Fort Collins",
+    "lat": 40.588992,
+    "lng": -105.074555,
+    "description": "The Reserve is a craft distillery in Fort Collins, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Young Hearts Distilling, Restaurant and Bar",
+    "slug": "young-hearts-distilling-restaurant-and-bar",
+    "state": "North Carolina",
+    "stateSlug": "north-carolina",
+    "city": "Raleigh",
+    "lat": 35.77746,
+    "lng": -78.638123,
+    "description": "Young Hearts Distilling, Restaurant and Bar is a craft distillery in Raleigh, North Carolina. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.trophybrewing.com"
+  },
+  {
+    "name": "FEW Spirits",
+    "slug": "few-spirits",
+    "state": "Illinois",
+    "stateSlug": "illinois",
+    "city": "Evanston",
+    "lat": 42.034854,
+    "lng": -87.679956,
+    "description": "FEW Spirits is a craft distillery in Evanston, Illinois. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.fewspirits.com/"
+  },
+  {
+    "name": "Painted Stave Distilling",
+    "slug": "painted-stave-distilling",
+    "state": "Delaware",
+    "stateSlug": "delaware",
+    "city": "Smyrna",
+    "lat": 39.299432,
+    "lng": -75.608479,
+    "description": "Painted Stave Distilling is a craft distillery in Smyrna, Delaware. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://paintedstave.com/"
+  },
+  {
+    "name": "Sun Liquor Distillery",
+    "slug": "sun-liquor-distillery",
     "state": "Washington",
     "stateSlug": "washington",
     "city": "Seattle",
-    "lat": 47.6062,
-    "lng": -122.3321,
-    "description": "Pacific Northwest craft distillery producing vodka, gin, and whiskey with focus on sustainability and local ingredients. Modern tasting room in downtown Seattle.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Cocktail bar", "Private tastings available"]
+    "lat": 47.662902,
+    "lng": -122.294344,
+    "description": "Sun Liquor Distillery is a craft distillery in Seattle, Washington. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.sunliquor.com"
   },
   {
-    "name": "Piedmont Distillery",
-    "slug": "piedmont-distillery",
+    "name": "Widow Jane Distillery",
+    "slug": "widow-jane-distillery",
+    "state": "New Jersey",
+    "stateSlug": "new-jersey",
+    "city": "",
+    "lat": 40.677342,
+    "lng": -74.015279,
+    "description": "Widow Jane Distillery is a craft distillery in New Jersey. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://widowjane.com"
+  },
+  {
+    "name": "TOPO Distillery",
+    "slug": "topo-distillery",
     "state": "North Carolina",
     "stateSlug": "north-carolina",
-    "city": "Madison",
-    "lat": 36.3613,
-    "lng": -79.7764,
-    "description": "Craft distillery in North Carolina's foothills producing bourbon, rye, and gin. Beautiful venue with event space and scenic mountain views.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Event space", "Gift shop"]
+    "city": "Chapel Hill",
+    "lat": 35.909452,
+    "lng": -79.063579,
+    "description": "TOPO Distillery is a craft distillery in Chapel Hill, North Carolina. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "http://www.topodistillery.com/"
   },
   {
-    "name": "Sonoma Distillery",
-    "slug": "sonoma-distillery",
+    "name": "Saint Johnsbury Distillery",
+    "slug": "saint-johnsbury-distillery",
+    "state": "New Hampshire",
+    "stateSlug": "new-hampshire",
+    "city": "St. Johnsbury",
+    "lat": 44.418255,
+    "lng": -72.017242,
+    "description": "Saint Johnsbury Distillery is a craft distillery in St. Johnsbury, New Hampshire. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Ye Old Grog Distillery",
+    "slug": "ye-old-grog-distillery",
+    "state": "Oregon",
+    "stateSlug": "oregon",
+    "city": "St. Helens",
+    "lat": 45.844748,
+    "lng": -122.828144,
+    "description": "Ye Old Grog Distillery is a craft distillery in St. Helens, Oregon. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public"
+    ]
+  },
+  {
+    "name": "Michters Distillery & Tour Center",
+    "slug": "michters-distillery-tour-center",
+    "state": "Kentucky",
+    "stateSlug": "kentucky",
+    "city": "",
+    "lat": 38.257536,
+    "lng": -85.763283,
+    "description": "Michters Distillery & Tour Center is a craft distillery in Kentucky. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://michters.com/"
+  },
+  {
+    "name": "Saint Augustine Distiliery",
+    "slug": "saint-augustine-distiliery",
+    "state": "Florida",
+    "stateSlug": "florida",
+    "city": "Saint Augustine",
+    "lat": 29.88945,
+    "lng": -81.318708,
+    "description": "Saint Augustine Distiliery is a craft distillery in Saint Augustine, Florida. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.staugustinedistillery.com/"
+  },
+  {
+    "name": "Thumb Butte Distillery",
+    "slug": "thumb-butte-distillery",
+    "state": "Arizona",
+    "stateSlug": "arizona",
+    "city": "",
+    "lat": 34.547228,
+    "lng": -112.460711,
+    "description": "Thumb Butte Distillery is a craft distillery in Arizona. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://thumbbuttedistillery.com/"
+  },
+  {
+    "name": "Bendistillery",
+    "slug": "bendistillery",
+    "state": "Oregon",
+    "stateSlug": "oregon",
+    "city": "",
+    "lat": 44.160282,
+    "lng": -121.359076,
+    "description": "Bendistillery is a craft distillery in Oregon. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.craterlakespirits.com/"
+  },
+  {
+    "name": "Chattanooga Whiskey",
+    "slug": "chattanooga-whiskey",
+    "state": "Tennessee",
+    "stateSlug": "tennessee",
+    "city": "Chattanooga",
+    "lat": 35.037263,
+    "lng": -85.307548,
+    "description": "Chattanooga Whiskey is a craft distillery in Chattanooga, Tennessee. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://chattanoogawhiskey.com/"
+  },
+  {
+    "name": "Spirit Works Distillery",
+    "slug": "spirit-works-distillery",
     "state": "California",
     "stateSlug": "california",
-    "city": "Rohnert Park",
-    "lat": 38.3260,
-    "lng": -122.7198,
-    "description": "California craft distillery producing spirits with local ingredients and traditional techniques. Visit the tasting room and discover premium craft spirits.",
-    "amenities": ["Tasting room", "Distillery tours", "Bottle sales", "Gift shop", "Dog-friendly patio"]
+    "city": "",
+    "lat": 38.404557,
+    "lng": -122.821804,
+    "description": "Spirit Works Distillery is a craft distillery in California. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://www.spiritworksdistillery.com/"
+  },
+  {
+    "name": "Elevation 5003 Distillery",
+    "slug": "elevation-5003-distillery",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Fort Collins",
+    "lat": 40.551792,
+    "lng": -105.059799,
+    "description": "Elevation 5003 Distillery is a craft distillery in Fort Collins, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "elevation5003.com/"
+  },
+  {
+    "name": "Jim Beam",
+    "slug": "jim-beam",
+    "state": "Kentucky",
+    "stateSlug": "kentucky",
+    "city": "",
+    "lat": 37.9292,
+    "lng": -85.652725,
+    "description": "Jim Beam is a craft distillery in Kentucky. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.jimbeam.com/"
+  },
+  {
+    "name": "Heaven Hill",
+    "slug": "heaven-hill",
+    "state": "Kentucky",
+    "stateSlug": "kentucky",
+    "city": "",
+    "lat": 37.793581,
+    "lng": -85.466085,
+    "description": "Heaven Hill is a craft distillery in Kentucky. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "http://www.bourbonheritagecenter.com"
+  },
+  {
+    "name": "Van Brunt Stillhouse",
+    "slug": "van-brunt-stillhouse",
+    "state": "New York",
+    "stateSlug": "new-york",
+    "city": "Brooklyn",
+    "lat": 40.673718,
+    "lng": -74.010088,
+    "description": "Van Brunt Stillhouse is a craft distillery in Brooklyn, New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://www.vanbruntstillhouse.com"
+  },
+  {
+    "name": "Cleveland Whiskey",
+    "slug": "cleveland-whiskey",
+    "state": "Ohio",
+    "stateSlug": "ohio",
+    "city": "",
+    "lat": 41.491324,
+    "lng": -81.691367,
+    "description": "Cleveland Whiskey is a craft distillery in Ohio. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "J&L Distilling",
+    "slug": "jl-distilling",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Boulder",
+    "lat": 40.025804,
+    "lng": -105.241441,
+    "description": "J&L Distilling is a craft distillery in Boulder, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "http://www.jldistilling.com/"
+  },
+  {
+    "name": "Westland Distillery",
+    "slug": "westland-distillery",
+    "state": "Washington",
+    "stateSlug": "washington",
+    "city": "Seattle",
+    "lat": 47.576605,
+    "lng": -122.334589,
+    "description": "Westland Distillery is a craft distillery in Seattle, Washington. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.westlanddistillery.com/"
+  },
+  {
+    "name": "Golden Moon Distillery",
+    "slug": "golden-moon-distillery",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Golden",
+    "lat": 39.723004,
+    "lng": -105.197005,
+    "description": "Golden Moon Distillery is a craft distillery in Golden, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.goldenmoondistillery.com/"
+  },
+  {
+    "name": "Vapor Distillery",
+    "slug": "vapor-distillery",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Boulder",
+    "lat": 40.018513,
+    "lng": -105.228631,
+    "description": "Vapor Distillery is a craft distillery in Boulder, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "www.vapordistillery.com"
+  },
+  {
+    "name": "MGP of Indiana",
+    "slug": "mgp-of-indiana",
+    "state": "Kentucky",
+    "stateSlug": "kentucky",
+    "city": "",
+    "lat": 39.098885,
+    "lng": -84.861249,
+    "description": "MGP of Indiana is a craft distillery in Kentucky. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Greenhook Ginsmiths",
+    "slug": "greenhook-ginsmiths",
+    "state": "New Jersey",
+    "stateSlug": "new-jersey",
+    "city": "",
+    "lat": 40.736108,
+    "lng": -73.95109,
+    "description": "Greenhook Ginsmiths is a craft distillery in New Jersey. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://greenhookgin.com/"
+  },
+  {
+    "name": "The New York Distilling Company",
+    "slug": "the-new-york-distilling-company",
+    "state": "New Jersey",
+    "stateSlug": "new-jersey",
+    "city": "",
+    "lat": 40.718547,
+    "lng": -73.94873,
+    "description": "The New York Distilling Company is a craft distillery in New Jersey. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Dirty Water Distillery",
+    "slug": "dirty-water-distillery",
+    "state": "Massachusetts",
+    "stateSlug": "massachusetts",
+    "city": "Plymouth",
+    "lat": 41.954949,
+    "lng": -70.662027,
+    "description": "Dirty Water Distillery is a craft distillery in Plymouth, Massachusetts. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "http://www.dirtywaterdistillery.com"
+  },
+  {
+    "name": "Bluebird Distilling",
+    "slug": "bluebird-distilling",
+    "state": "Pennsylvania",
+    "stateSlug": "pennsylvania",
+    "city": "Phoenixville",
+    "lat": 40.134136,
+    "lng": -75.512504,
+    "description": "Bluebird Distilling is a craft distillery in Phoenixville, Pennsylvania. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://www.bluebirddistilling.com/"
+  },
+  {
+    "name": "Bowen’s Whiskey",
+    "slug": "bowens-whiskey",
+    "state": "California",
+    "stateSlug": "california",
+    "city": "Bakersfield",
+    "lat": 35.431307,
+    "lng": -119.063225,
+    "description": "Bowen’s Whiskey is a craft distillery in Bakersfield, California. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "http://bowenswhiskey.com"
+  },
+  {
+    "name": "Still Waters Distillery",
+    "slug": "still-waters-distillery",
+    "state": "New York",
+    "stateSlug": "new-york",
+    "city": "Concord",
+    "lat": 43.816969,
+    "lng": -79.49022,
+    "description": "Still Waters Distillery is a craft distillery in Concord, New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.stillwatersdistillery.com"
+  },
+  {
+    "name": "Belle's Lounge",
+    "slug": "belles-lounge",
+    "state": "Michigan",
+    "stateSlug": "michigan",
+    "city": "Ferndale",
+    "lat": 42.461742,
+    "lng": -83.133572,
+    "description": "Belle's Lounge is a craft distillery in Ferndale, Michigan. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://www.valentinedistilling.com/belles-lounge"
+  },
+  {
+    "name": "Dark Island Spirits Distillery",
+    "slug": "dark-island-spirits-distillery",
+    "state": "New York",
+    "stateSlug": "new-york",
+    "city": "Alexandria Bay",
+    "lat": 44.335992,
+    "lng": -75.918058,
+    "description": "Dark Island Spirits Distillery is a craft distillery in Alexandria Bay, New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Driftless Glen Distillery",
+    "slug": "driftless-glen-distillery",
+    "state": "Wisconsin",
+    "stateSlug": "wisconsin",
+    "city": "Baraboo",
+    "lat": 43.466984,
+    "lng": -89.73861,
+    "description": "Driftless Glen Distillery is a craft distillery in Baraboo, Wisconsin. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public"
+    ],
+    "website": "http://driftlessglen.com"
+  },
+  {
+    "name": "Tom's Town Distilling Co.",
+    "slug": "toms-town-distilling-co",
+    "state": "Missouri",
+    "stateSlug": "missouri",
+    "city": "",
+    "lat": 39.093306,
+    "lng": -94.583361,
+    "description": "Tom's Town Distilling Co. is a craft distillery in Missouri. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Restless Spirits Distilling Company",
+    "slug": "restless-spirits-distilling-company",
+    "state": "Missouri",
+    "stateSlug": "missouri",
+    "city": "North Kansas City",
+    "lat": 39.139523,
+    "lng": -94.57924,
+    "description": "Restless Spirits Distilling Company is a craft distillery in North Kansas City, Missouri. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://restlessspiritsdistilling.com/"
+  },
+  {
+    "name": "BackDrop Distilling",
+    "slug": "backdrop-distilling",
+    "state": "Oregon",
+    "stateSlug": "oregon",
+    "city": "Bend",
+    "lat": 44.050821,
+    "lng": -121.330146,
+    "description": "BackDrop Distilling is a craft distillery in Bend, Oregon. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://backdropdistilling.com/"
+  },
+  {
+    "name": "Dillon's Small Batch Distillers",
+    "slug": "dillons-small-batch-distillers",
+    "state": "New York",
+    "stateSlug": "new-york",
+    "city": "Lincoln",
+    "lat": 43.189081,
+    "lng": -79.44571,
+    "description": "Dillon's Small Batch Distillers is a craft distillery in Lincoln, New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.dillons.ca"
+  },
+  {
+    "name": "Abbott and Wallace Distillery",
+    "slug": "abbott-and-wallace-distillery",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Longmont",
+    "lat": 40.165575,
+    "lng": -105.104615,
+    "description": "Abbott and Wallace Distillery is a craft distillery in Longmont, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public"
+    ]
+  },
+  {
+    "name": "Scratch Distillery",
+    "slug": "scratch-distillery",
+    "state": "Washington",
+    "stateSlug": "washington",
+    "city": "Edmonds",
+    "lat": 47.81031,
+    "lng": -122.384633,
+    "description": "Scratch Distillery is a craft distillery in Edmonds, Washington. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://scratchdistillery.com/"
+  },
+  {
+    "name": "State Line Distillery",
+    "slug": "state-line-distillery",
+    "state": "Wisconsin",
+    "stateSlug": "wisconsin",
+    "city": "Madison",
+    "lat": 43.08756,
+    "lng": -89.36221,
+    "description": "State Line Distillery is a craft distillery in Madison, Wisconsin. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public",
+      "Online presence"
+    ],
+    "website": "https://www.statelinedistillery.com/"
+  },
+  {
+    "name": "Tommy Rotter Distellery",
+    "slug": "tommy-rotter-distellery",
+    "state": "New York",
+    "stateSlug": "new-york",
+    "city": "Buffalo",
+    "lat": 42.877366,
+    "lng": -78.856711,
+    "description": "Tommy Rotter Distellery is a craft distillery in Buffalo, New York. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.tommyrotter.com/"
+  },
+  {
+    "name": "Sun King Spirits",
+    "slug": "sun-king-spirits",
+    "state": "Indiana",
+    "stateSlug": "indiana",
+    "city": "Carmel",
+    "lat": 39.975929,
+    "lng": -86.129263,
+    "description": "Sun King Spirits is a craft distillery in Carmel, Indiana. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.sunkingbrewing.com/carmel.html"
+  },
+  {
+    "name": "Mobb Distillery",
+    "slug": "mobb-distillery",
+    "state": "Colorado",
+    "stateSlug": "colorado",
+    "city": "Fort Collins",
+    "lat": 40.590131,
+    "lng": -105.072641,
+    "description": "Mobb Distillery is a craft distillery in Fort Collins, Colorado. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public"
+    ],
+    "website": "http://www.mobbmountain.com/"
+  },
+  {
+    "name": "Old Still",
+    "slug": "old-still",
+    "state": "Virginia",
+    "stateSlug": "virginia",
+    "city": "",
+    "lat": 37.387824,
+    "lng": -77.55201,
+    "description": "Old Still is a craft distillery in Virginia. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "New Mexico Hard Cider Taproom",
+    "slug": "new-mexico-hard-cider-taproom",
+    "state": "New Mexico",
+    "stateSlug": "new-mexico",
+    "city": "Santa Fe",
+    "lat": 35.682046,
+    "lng": -105.944952,
+    "description": "New Mexico Hard Cider Taproom is a craft distillery in Santa Fe, New Mexico. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Open to public"
+    ]
+  },
+  {
+    "name": "George Dickel Visitor Center",
+    "slug": "george-dickel-visitor-center",
+    "state": "Tennessee",
+    "stateSlug": "tennessee",
+    "city": "",
+    "lat": 35.438422,
+    "lng": -86.246094,
+    "description": "George Dickel Visitor Center is a craft distillery in Tennessee. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits"
+    ]
+  },
+  {
+    "name": "Rhine Hall Distillery",
+    "slug": "rhine-hall-distillery",
+    "state": "Illinois",
+    "stateSlug": "illinois",
+    "city": "Chicago",
+    "lat": 41.886888,
+    "lng": -87.677698,
+    "description": "Rhine Hall Distillery is a craft distillery in Chicago, Illinois. They produce handcrafted spirits using traditional and innovative distilling methods.",
+    "amenities": [
+      "Craft spirits",
+      "Online presence"
+    ],
+    "website": "https://www.rhinehall.com/"
   }
 ]
