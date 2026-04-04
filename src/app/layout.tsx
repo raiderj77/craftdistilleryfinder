@@ -17,10 +17,9 @@ export const metadata: Metadata = {
     "local distillery",
   ],
   metadataBase: new URL("https://craftdistilleryfinder.com"),
-  alternates: {
-    canonical: "https://craftdistilleryfinder.com",
-  },
+  alternates: { canonical: "https://craftdistilleryfinder.com" },
   robots: "index, follow, max-snippet:-1",
+  verification: { google: "mX6FcyH9VqP8ZGkIPPlPKS4vhvkWOMcz4ebryDGvZjM" },
 };
 
 export default function RootLayout({
