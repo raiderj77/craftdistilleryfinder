@@ -1,242 +1,123 @@
-import Link from "next/link";
-import locations from "@/data/locations.json";
+/* eslint-disable @next/next/no-img-element */
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import locations from '@/data/locations.json';
 
 export const revalidate = 86400;
 
-function formatStateName(slug: string): string {
-  return slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+const stateList = [
+  { name: 'Alabama', slug: 'alabama' }, { name: 'Alaska', slug: 'alaska' },
+  { name: 'Arizona', slug: 'arizona' }, { name: 'Arkansas', slug: 'arkansas' },
+  { name: 'California', slug: 'california' }, { name: 'Colorado', slug: 'colorado' },
+  { name: 'Connecticut', slug: 'connecticut' }, { name: 'Delaware', slug: 'delaware' },
+  { name: 'Florida', slug: 'florida' }, { name: 'Georgia', slug: 'georgia' },
+  { name: 'Hawaii', slug: 'hawaii' }, { name: 'Idaho', slug: 'idaho' },
+  { name: 'Illinois', slug: 'illinois' }, { name: 'Indiana', slug: 'indiana' },
+  { name: 'Iowa', slug: 'iowa' }, { name: 'Kansas', slug: 'kansas' },
+  { name: 'Kentucky', slug: 'kentucky' }, { name: 'Louisiana', slug: 'louisiana' },
+  { name: 'Maine', slug: 'maine' }, { name: 'Maryland', slug: 'maryland' },
+  { name: 'Massachusetts', slug: 'massachusetts' }, { name: 'Michigan', slug: 'michigan' },
+  { name: 'Minnesota', slug: 'minnesota' }, { name: 'Mississippi', slug: 'mississippi' },
+  { name: 'Missouri', slug: 'missouri' }, { name: 'Montana', slug: 'montana' },
+  { name: 'Nebraska', slug: 'nebraska' }, { name: 'Nevada', slug: 'nevada' },
+  { name: 'New Hampshire', slug: 'new-hampshire' }, { name: 'New Jersey', slug: 'new-jersey' },
+  { name: 'New Mexico', slug: 'new-mexico' }, { name: 'New York', slug: 'new-york' },
+  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'North Dakota', slug: 'north-dakota' },
+  { name: 'Ohio', slug: 'ohio' }, { name: 'Oklahoma', slug: 'oklahoma' },
+  { name: 'Oregon', slug: 'oregon' }, { name: 'Pennsylvania', slug: 'pennsylvania' },
+  { name: 'Rhode Island', slug: 'rhode-island' }, { name: 'South Carolina', slug: 'south-carolina' },
+  { name: 'South Dakota', slug: 'south-dakota' }, { name: 'Tennessee', slug: 'tennessee' },
+  { name: 'Texas', slug: 'texas' }, { name: 'Utah', slug: 'utah' },
+  { name: 'Vermont', slug: 'vermont' }, { name: 'Virginia', slug: 'virginia' },
+  { name: 'Washington', slug: 'washington' }, { name: 'West Virginia', slug: 'west-virginia' },
+  { name: 'Wisconsin', slug: 'wisconsin' }, { name: 'Wyoming', slug: 'wyoming' },
+];
+
+function getStateName(slug: string) {
+  return stateList.find((s) => s.slug === slug)?.name ?? slug.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
 }
 
 export function generateStaticParams() {
-  const states = [
-    "alabama",
-    "alaska",
-    "arizona",
-    "arkansas",
-    "california",
-    "colorado",
-    "connecticut",
-    "delaware",
-    "florida",
-    "georgia",
-    "hawaii",
-    "idaho",
-    "illinois",
-    "indiana",
-    "iowa",
-    "kansas",
-    "kentucky",
-    "louisiana",
-    "maine",
-    "maryland",
-    "massachusetts",
-    "michigan",
-    "minnesota",
-    "mississippi",
-    "missouri",
-    "montana",
-    "nebraska",
-    "nevada",
-    "new-hampshire",
-    "new-jersey",
-    "new-mexico",
-    "new-york",
-    "north-carolina",
-    "north-dakota",
-    "ohio",
-    "oklahoma",
-    "oregon",
-    "pennsylvania",
-    "rhode-island",
-    "south-carolina",
-    "south-dakota",
-    "tennessee",
-    "texas",
-    "utah",
-    "vermont",
-    "virginia",
-    "washington",
-    "west-virginia",
-    "wisconsin",
-    "wyoming",
-  ];
-
-  return states.map((state) => ({
-    state,
-  }));
+  return stateList.map((s) => ({ state: s.slug }));
 }
 
-type Props = {
-  params: Promise<{
-    state: string;
-  }>;
-};
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> {
   const { state } = await params;
-  const stateName = formatStateName(state);
+  const stateName = getStateName(state);
   return {
     title: `Craft Distilleries in ${stateName}`,
-    description: `Discover craft distilleries in ${stateName}. Find local distillery tours, tastings, and craft spirits.`,
+    description: `Explore craft distilleries in ${stateName}. Find whiskey, gin, rum, and artisan spirit producers with tours and tastings.`,
+    alternates: { canonical: `https://craftdistilleryfinder.com/${state}` },
   };
 }
 
-export default async function StatePage({ params }: Props) {
-  const { state } = await params;
-  const stateName = formatStateName(state);
-  const stateDistilleries = locations.filter((loc) => loc.stateSlug === state);
+const IMG_KEYWORDS = ['whiskey+distillery','craft+spirits','bourbon','gin+distillery','rum+craft','copper+still','distillery+tasting','barrel+aging'];
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://craftdistilleryfinder.com",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: stateName,
-        item: `https://craftdistilleryfinder.com/${state}`,
-      },
-    ],
-  };
+export default async function StatePage({ params }: { params: Promise<{ state: string }> }) {
+  const { state } = await params;
+  const stateName = getStateName(state);
+  const spots = locations.filter((l) => l.stateSlug === state);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context':'https://schema.org','@type':'BreadcrumbList',
+        itemListElement:[
+          { '@type':'ListItem',position:1,name:'Home',item:'https://craftdistilleryfinder.com'},
+          { '@type':'ListItem',position:2,name:stateName,item:`https://craftdistilleryfinder.com/${state}`},
+        ],
+      }) }} />
 
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "2rem" }}>
-        <div style={{ marginBottom: "2rem" }}>
-          <Link
-            href="/"
-            style={{
-              color: "#2563eb",
-              textDecoration: "none",
-              marginBottom: "1rem",
-              display: "inline-block",
-            }}
-          >
-            ← Back to Home
-          </Link>
+      {/* Hero */}
+      <section style={{ position: 'relative', background: 'linear-gradient(135deg, var(--charcoal) 0%, #1a1008 100%)', padding: '4rem 1.5rem 3.5rem', overflow: 'hidden' }}>
+        <div aria-hidden style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(201,123,42,0.05) 1px, transparent 1px)', backgroundSize: '24px 24px', pointerEvents: 'none' }} />
+        <div aria-hidden style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: `url("https://source.unsplash.com/1200x600/?whiskey+distillery&sig=91") center/cover no-repeat`, opacity: 0.07, pointerEvents: 'none' }} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <Link href="/" style={{ color: 'var(--amber-lt)', fontSize: '0.875rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginBottom: '1.5rem', fontWeight: 700, fontFamily: 'var(--font-display)' }}>← All States</Link>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: 'white', marginBottom: '0.75rem' }}>
+            Craft Distilleries in <span style={{ color: 'var(--amber-lt)' }}>{stateName}</span>
+          </h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+            <span className="chip chip-white">{spots.length} {spots.length===1?'Distillery':'Distilleries'} Listed</span>
+            <span style={{ color: '#c0a07a', fontSize: '0.9rem', fontFamily: 'var(--font-display)' }}>Tours &amp; tastings available</span>
+          </div>
         </div>
+        <svg aria-hidden viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', display: 'block' }} preserveAspectRatio="none">
+          <path d="M0,20 C360,40 1080,0 1440,20 L1440,40 L0,40 Z" fill="var(--ivory)" />
+        </svg>
+      </section>
 
-        <h1
-          style={{
-            fontSize: "2.25rem",
-            fontWeight: "bold",
-            margin: "0 0 0.5rem 0",
-            color: "#1f2937",
-          }}
-        >
-          Craft Distilleries in {stateName}
-        </h1>
-        <p style={{ color: "#6b7280", margin: "0 0 2rem 0" }}>
-          Discover craft distilleries, tours, and tastings in {stateName}
-        </p>
-
-        {stateDistilleries.length > 0 ? (
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-              gap: "2rem",
-            }}
-          >
-            {stateDistilleries.map((distillery) => (
-              <Link
-                key={distillery.slug}
-                href={`/${distillery.stateSlug}/${distillery.slug}`}
-                style={{ textDecoration: "none" }}
-              >
-                <div
-                  style={{
-                    border: "1px solid #e5e7eb",
-                    borderRadius: "0.5rem",
-                    padding: "1.5rem",
-                    backgroundColor: "#fff",
-                    cursor: "pointer",
-                    transition: "box-shadow 0.3s",
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      margin: "0 0 0.5rem 0",
-                      color: "#1f2937",
-                    }}
-                  >
-                    {distillery.name}
-                  </h2>
-                  <p
-                    style={{
-                      color: "#6b7280",
-                      margin: "0 0 1rem 0",
-                      fontSize: "0.875rem",
-                    }}
-                  >
-                    {distillery.city}, {distillery.state}
-                  </p>
-                  <p
-                    style={{
-                      color: "#4b5563",
-                      margin: "0 0 1rem 0",
-                      lineHeight: "1.5",
-                    }}
-                  >
-                    {distillery.description}
-                  </p>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      gap: "0.5rem",
-                    }}
-                  >
-                    {distillery.amenities.map((amenity) => (
-                      <span
-                        key={amenity}
-                        style={{
-                          backgroundColor: "#f3f4f6",
-                          padding: "0.25rem 0.75rem",
-                          borderRadius: "0.25rem",
-                          fontSize: "0.75rem",
-                          fontWeight: "500",
-                          color: "#374151",
-                        }}
-                      >
-                        {amenity}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <div
-            style={{
-              padding: "2rem",
-              backgroundColor: "#f9fafb",
-              borderRadius: "0.5rem",
-              textAlign: "center",
-              color: "#6b7280",
-            }}
-          >
-            <p>No distilleries found in {stateName}. Check back soon!</p>
-          </div>
-        )}
-      </div>
+      {/* Grid */}
+      <section style={{ padding: '4rem 1.5rem' }}>
+        <div className="container">
+          {spots.length > 0 ? (
+            <div className="grid-3">
+              {spots.map((spot, i) => (
+                <Link key={spot.slug} href={`/${state}/${spot.slug}`} style={{ textDecoration: 'none' }}>
+                  <article className="card">
+                    <img src={`https://source.unsplash.com/800x500/?${IMG_KEYWORDS[i%IMG_KEYWORDS.length]}&sig=${i+30}`} alt={spot.name} className="card-img" loading="lazy" width={800} height={500} />
+                    <div className="card-body">
+                      <div className="card-meta"><span>📍</span><span>{spot.city ? `${spot.city}, ` : ''}{spot.state}</span></div>
+                      <h2 className="card-title">{spot.name}</h2>
+                      <p style={{ fontSize: '0.875rem', color: '#667', lineHeight: 1.65, flex: 1, marginBottom: '1rem' }}>{spot.description.slice(0,100)}…</p>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
+                        {spot.amenities.slice(0,3).map((a) => <span key={a} className="chip">{a}</span>)}
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div style={{ textAlign: 'center', padding: '5rem 2rem', background: 'var(--white)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-card)' }}>
+              <p style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🥃</p>
+              <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--charcoal)', marginBottom: '0.75rem' }}>Coming Soon</h2>
+              <p style={{ color: 'var(--gray)' }}>{"We're adding distilleries in "}{stateName}{" — check back soon!"}</p>
+              <Link href="/" className="btn btn-amber" style={{ display: 'inline-flex', marginTop: '1.5rem' }}>Browse Other States</Link>
+            </div>
+          )}
+        </div>
+      </section>
     </>
   );
 }
