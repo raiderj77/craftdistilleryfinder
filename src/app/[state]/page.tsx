@@ -71,7 +71,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
       {/* Hero */}
       <section style={{ position: 'relative', background: 'linear-gradient(135deg, var(--charcoal) 0%, #1a1008 100%)', padding: '4rem 1.5rem 3.5rem', overflow: 'hidden' }}>
         <div aria-hidden style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(201,123,42,0.05) 1px, transparent 1px)', backgroundSize: '24px 24px', pointerEvents: 'none' }} />
-        <div aria-hidden style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: `url("https://source.unsplash.com/1200x600/?whiskey+distillery&sig=91") center/cover no-repeat`, opacity: 0.07, pointerEvents: 'none' }} />
+        <div aria-hidden style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: `url("https://picsum.photos/seed/hero-bg-state/1200/600") center/cover no-repeat`, opacity: 0.07, pointerEvents: 'none' }} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <Link href="/" style={{ color: 'var(--amber-lt)', fontSize: '0.875rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginBottom: '1.5rem', fontWeight: 700, fontFamily: 'var(--font-display)' }}>← All States</Link>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: 'white', marginBottom: '0.75rem' }}>
@@ -95,7 +95,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
               {spots.map((spot, i) => (
                 <Link key={spot.slug} href={`/${state}/${spot.slug}`} style={{ textDecoration: 'none' }}>
                   <article className="card">
-                    <img src={`https://source.unsplash.com/800x500/?${IMG_KEYWORDS[i%IMG_KEYWORDS.length]}&sig=${i+30}`} alt={spot.name} className="card-img" loading="lazy" width={800} height={500} />
+                    <img src={`https://picsum.photos/seed/${spot.slug}/800/500`} alt={spot.name} className="card-img" loading="lazy" width={800} height={500} />
                     <div className="card-body">
                       <div className="card-meta"><span>📍</span><span>{spot.city ? `${spot.city}, ` : ''}{spot.state}</span></div>
                       <h2 className="card-title">{spot.name}</h2>
