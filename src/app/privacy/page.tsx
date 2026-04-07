@@ -105,8 +105,7 @@ export default function PrivacyPage() {
         <p>
           We use Google AdSense to display advertisements on our website. Google AdSense uses cookies
           and similar technologies to serve ads based on your prior visits to our website and other
-          websites. You can opt out of personalized advertising by visiting the Google Ads Settings
-          page. For more information about how Google uses information from sites or apps that use
+          websites. For more information about how Google uses information from sites or apps that use
           Google services, please visit:{" "}
           <a
             href="https://www.google.com/intl/en/policies/privacy/"
@@ -117,6 +116,36 @@ export default function PrivacyPage() {
             https://www.google.com/intl/en/policies/privacy/
           </a>
         </p>
+        <p style={{ marginTop: "1rem" }}>
+          We work with third-party advertising partners, including Google, who may use cookies to
+          serve ads based on your prior visits to this website or other websites.
+        </p>
+        <p style={{ marginTop: "1rem" }}>
+          You may opt out of personalized advertising by visiting your ad settings or the industry
+          opt-out page:
+        </p>
+        <ul style={{ marginTop: "0.5rem", paddingLeft: "1.5rem" }}>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <a
+              href="https://ads.google.com/settings"
+              style={{ color: "#2563eb", textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Ad Settings — ads.google.com/settings
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://optout.aboutads.info"
+              style={{ color: "#2563eb", textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Digital Advertising Alliance Opt-Out — optout.aboutads.info
+            </a>
+          </li>
+        </ul>
 
         <h2
           style={{
@@ -131,7 +160,9 @@ export default function PrivacyPage() {
         <p>
           We may use cookies on our website. A cookie is a small file that resides on your computer.
           Cookies help us understand how you use our website. We use cookies to remember your
-          preferences and to track advertising conversions.
+          preferences and to track advertising conversions. Third-party advertising partners,
+          including Google, may also set cookies to serve personalized ads based on your browsing
+          history across websites.
         </p>
 
         <h2
