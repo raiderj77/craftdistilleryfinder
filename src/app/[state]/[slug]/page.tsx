@@ -3,6 +3,21 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import locations from '@/data/locations.json';
 
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
+
+function getMapboxImage(lat: number, lng: number, width = 800, height = 500): string {
+  return `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/${lng},${lat},14,0/${width}x${height}?access_token=${MAPBOX_TOKEN}`;
+}
+
+function getDistilleryPreview(d: { name: string; state: string; city: string; amenities: string[]; description: string }): string {
+  const amenityCount = d.amenities.length;
+  const location = d.city ? `${d.city}, ${d.state}` : d.state;
+  if (amenityCount >= 2) {
+    return `Craft distillery in ${location} offering ${d.amenities.slice(0, 2).join(' and ').toLowerCase()}.`;
+  }
+  return `Craft distillery in ${location}. Open for visitors.`;
+}
+
 export const revalidate = 86400;
 
 const stateList = [
@@ -60,8 +75,6 @@ const AMENITY_ICONS: Record<string, string> = {
   'Gift shop': '🎁', 'Bar': '🍸',
 };
 
-const HERO_KEYWORDS = ['whiskey+distillery', 'craft+spirits+distillery', 'bourbon+barrel', 'gin+distillery', 'copper+still+distillery', 'distillery+tasting+room'];
-
 export default async function DistilleryPage({ params }: { params: Promise<{ state: string; slug: string }> }) {
   const { state, slug } = await params;
   const location = locations.find((l) => l.slug === slug);
@@ -78,7 +91,6 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
   }
 
   const related = locations.filter((l) => l.stateSlug === state && l.slug !== slug).slice(0, 3);
-  const heroKeyword = HERO_KEYWORDS[slug.length % HERO_KEYWORDS.length];
 
   return (
     <>
@@ -99,11 +111,11 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
       }) }} />
 
       {/* Hero */}
-      <div style={{ position: 'relative', height: '440px', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '440px', overflow: 'hidden', background: 'linear-gradient(160deg, var(--charcoal) 0%, var(--char-mid) 100%)' }}>
         <img
-          src={`https://picsum.photos/seed/${slug}/1400/600`}
+          src={getMapboxImage(location.lat, location.lng, 1400, 600)}
           alt={`${location.name} craft distillery`}
-          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', opacity: 0.85 }}
           width={1600}
           height={800}
         />
@@ -130,7 +142,11 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
           {/* Left */}
           <div>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--charcoal)', marginBottom: '1rem' }}>About This Distillery</h2>
-            <p style={{ lineHeight: 1.9, marginBottom: '2.5rem', color: 'var(--text)', fontSize: '1.025rem' }}>{location.description}</p>
+            <p style={{ lineHeight: 1.9, marginBottom: '2.5rem', color: 'var(--text)', fontSize: '1.025rem' }}>
+              {location.name} is a craft distillery located in {location.city ? `${location.city}, ` : ''}{location.state}.{' '}
+              {location.amenities.length > 0 ? `Visitors can enjoy ${location.amenities.slice(0, 2).join(' and ').toLowerCase()}.` : 'Open for tastings and tours.'}{' '}
+              Find directions using the GPS coordinates below.
+            </p>
 
             {location.amenities.length > 0 && (
               <>
@@ -209,11 +225,11 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
               {related.map((loc, i) => (
                 <Link key={loc.slug} href={`/${state}/${loc.slug}`} style={{ textDecoration: 'none' }}>
                   <article className="card">
-                    <img src={`https://picsum.photos/seed/${loc.slug}/800/500`} alt={loc.name} className="card-img" loading="lazy" width={800} height={400} />
+                    <img src={getMapboxImage(loc.lat, loc.lng)} alt={loc.name} className="card-img" loading="lazy" width={800} height={400} />
                     <div className="card-body">
                       <div className="card-meta"><span>📍</span><span>{loc.city ? `${loc.city}, ` : ''}{loc.state}</span></div>
                       <h3 className="card-title">{loc.name}</h3>
-                      <p style={{ fontSize: '0.85rem', color: '#667', lineHeight: 1.6 }}>{loc.description.slice(0, 85)}…</p>
+                      <p style={{ fontSize: '0.85rem', color: '#667', lineHeight: 1.6 }}>{getDistilleryPreview(loc)}</p>
                     </div>
                   </article>
                 </Link>
