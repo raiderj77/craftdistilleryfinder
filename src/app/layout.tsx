@@ -13,7 +13,11 @@ export const metadata: Metadata = {
   keywords: 'craft distillery, distillery near me, whiskey distillery, craft spirits, distillery tours, local distillery',
   metadataBase: new URL('https://craftdistilleryfinder.com'),
   alternates: { canonical: 'https://craftdistilleryfinder.com' },
-  robots: 'index, follow, max-snippet:-1',
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: { index: false, follow: true },
+  },
   verification: { google: 'mX6FcyH9VqP8ZGkIPPlPKS4vhvkWOMcz4ebryDGvZjM' },
 };
 
