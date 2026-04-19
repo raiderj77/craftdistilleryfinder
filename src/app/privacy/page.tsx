@@ -207,6 +207,61 @@ export default function PrivacyPage() {
             color: "#1f2937",
           }}
         >
+          MODPA Compliance (Maryland Online Data Privacy Act)
+        </h2>
+        <p>
+          <strong>Effective Date:</strong> April 1, 2026
+        </p>
+        <p style={{ marginTop: "1rem" }}>
+          Craft Distillery Finder complies with the Maryland Online Data Privacy Act (MODPA). As a Maryland resident, you have the following consumer rights under MODPA:
+        </p>
+        <ul style={{ marginBottom: "1rem", paddingLeft: "1.5rem" }}>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <strong>Right to Access:</strong> You have the right to request access to the personal data we collect about you.
+          </li>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <strong>Right to Correct:</strong> You have the right to request correction of inaccurate personal data.
+          </li>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <strong>Right to Delete:</strong> You have the right to request deletion of your personal data.
+          </li>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <strong>Right to Opt-Out:</strong> You have the right to opt out of the sale or sharing of your personal data and targeted advertising.
+          </li>
+          <li style={{ marginBottom: "0.5rem" }}>
+            <strong>Right to Data Portability:</strong> You have the right to obtain a copy of your personal data in a portable and readily usable format.
+          </li>
+        </ul>
+        <p style={{ marginTop: "1rem" }}>
+          <strong>Global Privacy Control (GPC):</strong> Craft Distillery Finder honors Global Privacy Control (GPC) signals. When GPC is enabled in your browser or device, we treat it as a universal opt-out signal and disable tracking, advertising, and analytics scripts accordingly.
+        </p>
+        <p style={{ marginTop: "1rem" }}>
+          <strong>Data Sales:</strong> Craft Distillery Finder does not sell personal data to third parties.
+        </p>
+        <p style={{ marginTop: "1rem" }}>
+          <strong>Response Timeline:</strong> We will respond to verified consumer rights requests within 45 days of receipt. If we need additional time, we will notify you of any delays.
+        </p>
+        <p style={{ marginTop: "1rem" }}>
+          <strong>Contact for Rights Requests:</strong> To exercise any of these rights, please contact us at:
+        </p>
+        <p style={{ margin: "1rem 0" }}>
+          <strong>Email:</strong>{" "}
+          <a
+            href="mailto:privacy@craftdistilleryfinder.com"
+            style={{ color: "#2563eb", textDecoration: "none" }}
+          >
+            privacy@craftdistilleryfinder.com
+          </a>
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+            margin: "2rem 0 1rem 0",
+            color: "#1f2937",
+          }}
+        >
           Third-Party Services
         </h2>
         <p>
