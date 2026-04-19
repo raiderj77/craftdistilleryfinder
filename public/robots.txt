@@ -50,10 +50,10 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
+# Default rule — paused for editorial investment
 User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
+Disallow: /
+Allow: /robots.txt
+Allow: /sitemap.xml
 
 Sitemap: https://craftdistilleryfinder.com/sitemap.xml
