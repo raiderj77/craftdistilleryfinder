@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context':'https://schema.org','@type':'WebSite',url:'https://craftdistilleryfinder.com',
-        name:'Craft Distillery Finder',dateModified:'2026-04-07',
+        name:'Craft Distillery Finder',dateModified:new Date().toISOString().substring(0,10),
         potentialAction:{'@type':'SearchAction',target:{'@type':'EntryPoint',urlTemplate:'https://craftdistilleryfinder.com/search?q={search_term_string}'},'query-input':'required name=search_term_string'},
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -51,7 +51,7 @@ export default function Home() {
         name:'Craft Distillery Finder',
         url:'https://craftdistilleryfinder.com',
         description:'Directory of craft distilleries across the United States',
-        dateModified:'2026-04-07',
+        dateModified:new Date().toISOString().substring(0,10),
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context':'https://schema.org','@type':'LocalBusiness',
@@ -59,11 +59,11 @@ export default function Home() {
         url:'https://craftdistilleryfinder.com',
         description:'Find craft distilleries, tasting rooms, and spirits tours near you',
         areaServed:'United States',
-        dateModified:'2026-04-07',
+        dateModified:new Date().toISOString().substring(0,10),
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context':'https://schema.org','@type':'FAQPage',
-        dateModified:'2026-04-07',
+        dateModified:new Date().toISOString().substring(0,10),
         mainEntity:[
           {'@type':'Question',name:'How do I find a craft distillery near me?',acceptedAnswer:{'@type':'Answer',text:'Use the Craft Distillery Finder to search by state, city, or spirit type. Each listing includes the distillery address, tasting room hours, available spirits, tour information, and whether reservations are required.'}},
           {'@type':'Question',name:'Do craft distilleries offer tours and tastings?',acceptedAnswer:{'@type':'Answer',text:'Most craft distilleries offer tasting room experiences, and many provide behind-the-scenes distillery tours. Tour availability, duration, and cost vary by location — some are free with a tasting purchase while others charge $15 to $30 per person. Check individual listings for current tour schedules and reservation requirements.'}},
