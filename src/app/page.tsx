@@ -21,7 +21,7 @@ function getDistilleryPreview(d: { name: string; state: string; city: string; am
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Craft Distillery Finder — Discover Local Distilleries Across America',
+  title: 'Craft Distillery Finder , Discover Local Distilleries Across America',
   description: 'Find craft distilleries near you. Explore whiskey, gin, rum, and artisan spirit producers with tours and tastings across all 50 states.',
 };
 
@@ -66,9 +66,9 @@ export default function Home() {
         dateModified:new Date().toISOString().substring(0,10),
         mainEntity:[
           {'@type':'Question',name:'How do I find a craft distillery near me?',acceptedAnswer:{'@type':'Answer',text:'Use the Craft Distillery Finder to search by state, city, or spirit type. Each listing includes the distillery address, tasting room hours, available spirits, tour information, and whether reservations are required.'}},
-          {'@type':'Question',name:'Do craft distilleries offer tours and tastings?',acceptedAnswer:{'@type':'Answer',text:'Most craft distilleries offer tasting room experiences, and many provide behind-the-scenes distillery tours. Tour availability, duration, and cost vary by location — some are free with a tasting purchase while others charge $15 to $30 per person. Check individual listings for current tour schedules and reservation requirements.'}},
+          {'@type':'Question',name:'Do craft distilleries offer tours and tastings?',acceptedAnswer:{'@type':'Answer',text:'Most craft distilleries offer tasting room experiences, and many provide behind-the-scenes distillery tours. Tour availability, duration, and cost vary by location , some are free with a tasting purchase while others charge $15 to $30 per person. Check individual listings for current tour schedules and reservation requirements.'}},
           {'@type':'Question',name:'What spirits do craft distilleries typically produce?',acceptedAnswer:{'@type':'Answer',text:'American craft distilleries produce a wide range of spirits including bourbon, rye whiskey, vodka, gin, rum, brandy, and specialty spirits using local grains and botanicals. Many focus on small-batch production with distinctive regional character not found in mass-market brands.'}},
-          {'@type':'Question',name:'Are craft distillery tasting rooms open to the public?',acceptedAnswer:{'@type':'Answer',text:'Most craft distillery tasting rooms welcome walk-in visitors during posted hours, though some require advance reservations, especially on weekends. Hours vary seasonally — always check the distillery listing or contact them directly before visiting.'}},
+          {'@type':'Question',name:'Are craft distillery tasting rooms open to the public?',acceptedAnswer:{'@type':'Answer',text:'Most craft distillery tasting rooms welcome walk-in visitors during posted hours, though some require advance reservations, especially on weekends. Hours vary seasonally , always check the distillery listing or contact them directly before visiting.'}},
           {'@type':'Question',name:'How many craft distilleries are there in the United States?',acceptedAnswer:{'@type':'Answer',text:'The United States has over 2,000 craft distilleries operating across all 50 states, with the highest concentrations in Kentucky, New York, Colorado, Washington, and Texas. The craft spirits industry has grown over 700% since 2010 according to the American Craft Spirits Association.'}},
         ],
       }) }} />
@@ -97,7 +97,7 @@ export default function Home() {
             Discover <span style={{ color: 'var(--amber-lt)' }}>Craft</span> Distilleries<br />Across America
           </h1>
           <p className="anim-fade-up anim-delay-2" style={{ fontSize: '1.05rem', color: '#c0a07a', marginBottom: '2.75rem', maxWidth: '500px', margin: '0 auto 2.75rem', fontFamily: 'var(--font-display)', lineHeight: 1.65 }}>
-            Whiskey, gin, rum, vodka &amp; artisan spirits — handcrafted by local distillers in every state.
+            Whiskey, gin, rum, vodka &amp; artisan spirits , handcrafted by local distillers in every state.
           </p>
           <div className="anim-fade-up anim-delay-3" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
             <a href="/alabama" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 2rem', borderRadius: 'var(--radius-pill, 50px)', fontWeight: 700, fontSize: '0.95rem', background: 'var(--amber)', color: 'var(--charcoal)', textDecoration: 'none', transition: 'background 0.2s' }}>Browse Distilleries →</a>
@@ -162,7 +162,7 @@ export default function Home() {
           <div className="grid-3">
             {[
               { icon:'🗺️', title:'Browse by State', desc:'Explore craft distilleries in any state. Filter by spirit type, tours available, and distance.' },
-              { icon:'🥃', title:'Check Details', desc:'Review the distillery profile — spirit lineup, tasting room hours, tour options, and amenities.' },
+              { icon:'🥃', title:'Check Details', desc:'Review the distillery profile , spirit lineup, tasting room hours, tour options, and amenities.' },
               { icon:'🎉', title:'Visit & Taste', desc:"Navigate to your chosen distillery and experience the craft. Many offer exclusive bottle releases only available on-site." },
             ].map(({icon,title,desc}) => (
               <div key={title} style={{ textAlign: 'center', padding: '1.5rem', background: 'var(--white)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-card)', border: '1px solid rgba(201,123,42,0.1)' }}>
@@ -182,9 +182,9 @@ export default function Home() {
           <p style={{ lineHeight: 1.85, marginBottom: '1.25rem' }}>The United States is experiencing a golden age of craft distilling. From bourbon country in Kentucky to innovative gin producers in the Pacific Northwest, small-batch distillers are crafting world-class spirits with local ingredients and generations of tradition.</p>
           <p style={{ lineHeight: 1.85, marginBottom: '1.25rem' }}>Craft distilleries differ from large commercial producers in one fundamental way: they care deeply about every bottle. Many source their grain from local farms, use copper pot stills that have been in their families for decades, and age their spirits in small barrels that impart more flavor in less time.</p>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', color: 'var(--charcoal)', marginTop: '2rem', marginBottom: '0.75rem' }}>What to Expect on a Distillery Tour</h3>
-          <p style={{ lineHeight: 1.85, marginBottom: '1.25rem' }}>Most craft distilleries offer guided tours that walk you through the entire production process — from grain to glass. You'll see the mash tuns, fermentation tanks, and gleaming copper stills up close. The highlight is always the tasting room, where you'll sample expressions that may never appear on retail shelves.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '1.25rem' }}>Most craft distilleries offer guided tours that walk you through the entire production process , from grain to glass. You'll see the mash tuns, fermentation tanks, and gleaming copper stills up close. The highlight is always the tasting room, where you'll sample expressions that may never appear on retail shelves.</p>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', color: 'var(--charcoal)', marginTop: '2rem', marginBottom: '0.75rem' }}>Supporting Local Distillers</h3>
-          <p style={{ lineHeight: 1.85 }}>Every bottle purchased at a craft distillery supports the local economy, small farmers, and passionate artisans. Many craft spirits also reflect regional terroir — the local water, grain, and climate that make each spirit uniquely tied to its place of origin.</p>
+          <p style={{ lineHeight: 1.85 }}>Every bottle purchased at a craft distillery supports the local economy, small farmers, and passionate artisans. Many craft spirits also reflect regional terroir , the local water, grain, and climate that make each spirit uniquely tied to its place of origin.</p>
         </div>
       </section>
 
@@ -230,27 +230,27 @@ export default function Home() {
         <div className="container" style={{ maxWidth: '860px' }}>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', color: 'var(--charcoal)', marginBottom: '1rem' }}>How to plan a craft distillery visit</h2>
-          <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Check tasting room hours and reservation requirements before visiting — most distilleries are open Thursday through Sunday and require advance booking for tours. Bring a designated driver or arrange transportation.</p>
+          <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Check tasting room hours and reservation requirements before visiting , most distilleries are open Thursday through Sunday and require advance booking for tours. Bring a designated driver or arrange transportation.</p>
           <p style={{ lineHeight: 1.85, marginBottom: '1rem', color: '#4b5563' }}>When you arrive at a tasting room, expect to receive a curated flight of three to six poured samples, often guided by a knowledgeable staff member who can walk you through production methods and ingredient sourcing. Distillery tours typically run 30 to 60 minutes and take you through the still house, fermentation area, and barrel storage. To get the most from your visit, ask about limited releases and single-barrel selections that are only available on-site. The United States has over 2,000 craft distilleries operating across all 50 states, so no matter where you are, a great tasting experience is within reach.</p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', color: 'var(--charcoal)', marginBottom: '1rem', marginTop: '3rem' }}>What makes craft spirits different from mass-market brands?</h2>
           <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Craft distilleries typically use locally sourced grains and botanicals, smaller batch sizes, and hands-on production methods that create distinctive regional flavors not found in national brands.</p>
-          <p style={{ lineHeight: 1.85, marginBottom: '1rem', color: '#4b5563' }}>The craft spirits movement draws from the same ethos as craft beer and artisan wine — a belief that what goes into the bottle, and where it comes from, matters enormously to the final flavor. Small-batch distillation allows producers to experiment with heirloom grain varieties, local honey, seasonal botanicals, and unconventional aging vessels that large distilleries cannot afford to pursue at scale. Much like wine, terroir plays a meaningful role: the mineral content of local water, the humidity in a Kentucky warehouse, and the oak character of a Texas barrel all leave their mark. The craft spirits industry has grown over 700% since 2010 according to the American Craft Spirits Association, reflecting how dramatically consumer appetite for distinctive, place-driven spirits has accelerated.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '1rem', color: '#4b5563' }}>The craft spirits movement draws from the same ethos as craft beer and artisan wine , a belief that what goes into the bottle, and where it comes from, matters enormously to the final flavor. Small-batch distillation allows producers to experiment with heirloom grain varieties, local honey, seasonal botanicals, and unconventional aging vessels that large distilleries cannot afford to pursue at scale. Much like wine, terroir plays a meaningful role: the mineral content of local water, the humidity in a Kentucky warehouse, and the oak character of a Texas barrel all leave their mark. The craft spirits industry has grown over 700% since 2010 according to the American Craft Spirits Association, reflecting how dramatically consumer appetite for distinctive, place-driven spirits has accelerated.</p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', color: 'var(--charcoal)', marginBottom: '1rem', marginTop: '3rem' }}>What should I know before visiting a distillery tasting room?</h2>
-          <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Bring a valid government-issued ID — distilleries are required to verify age for all tasting room visitors. Most tasting rooms charge $10 to $20 for a flight of samples, often credited toward a bottle purchase.</p>
-          <p style={{ lineHeight: 1.85, marginBottom: '1rem', color: '#4b5563' }}>Tasting room etiquette is relaxed but respectful: sip slowly, engage with staff, and feel free to ask questions — distillers genuinely enjoy sharing their craft with interested visitors. If you plan to purchase bottles to take home, note that quantity limits and shipping rules vary significantly by state; some states allow direct-to-consumer shipping while others require all bottles to leave in your personal luggage. Craft spirits sales exceeded $6 billion in 2023, representing approximately 10% of the total U.S. spirits market by volume — a sign of just how mainstream the craft movement has become, even as each bottle retains a distinctly local character.</p>
+          <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Bring a valid government-issued ID , distilleries are required to verify age for all tasting room visitors. Most tasting rooms charge $10 to $20 for a flight of samples, often credited toward a bottle purchase.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '1rem', color: '#4b5563' }}>Tasting room etiquette is relaxed but respectful: sip slowly, engage with staff, and feel free to ask questions , distillers genuinely enjoy sharing their craft with interested visitors. If you plan to purchase bottles to take home, note that quantity limits and shipping rules vary significantly by state; some states allow direct-to-consumer shipping while others require all bottles to leave in your personal luggage. Craft spirits sales exceeded $6 billion in 2023, representing approximately 10% of the total U.S. spirits market by volume , a sign of just how mainstream the craft movement has become, even as each bottle retains a distinctly local character.</p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', color: 'var(--charcoal)', marginBottom: '1rem', marginTop: '3rem' }}>Which states have the most craft distilleries?</h2>
           <p style={{ fontWeight: 700, lineHeight: 1.75, marginBottom: '0.75rem', color: 'var(--charcoal)' }}>Kentucky leads in bourbon production with over 90 distilleries, followed by New York, Colorado, Washington, and Texas. Each region produces spirits with distinctive local character influenced by climate, water, and available grains.</p>
-          <p style={{ lineHeight: 1.85, marginBottom: '2rem', color: '#4b5563' }}>Regional specialties have become a major draw for spirits tourism: New York is known for apple brandy and Empire rye, Colorado for high-altitude gin and whiskey, Washington for grain-forward vodka and single malt, and Texas for robust bourbons aged in rapidly expanding barrels under the summer heat. State regulations directly affect distillery density — states with favorable direct-sales laws and lower licensing fees tend to see faster growth in the craft sector.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '2rem', color: '#4b5563' }}>Regional specialties have become a major draw for spirits tourism: New York is known for apple brandy and Empire rye, Colorado for high-altitude gin and whiskey, Washington for grain-forward vodka and single malt, and Texas for robust bourbons aged in rapidly expanding barrels under the summer heat. State regulations directly affect distillery density , states with favorable direct-sales laws and lower licensing fees tend to see faster growth in the craft sector.</p>
 
           <div style={{ borderTop: '1px solid rgba(201,123,42,0.2)', paddingTop: '1.5rem' }}>
             <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '0.5rem', fontWeight: 600 }}>Further Reading</p>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
               <li><a href="https://americancraftspirits.com" target="_blank" rel="noopener noreferrer nofollow" style={{ color: '#2563eb', fontSize: '0.875rem' }}>American Craft Spirits Association</a></li>
               <li><a href="https://distilledspirits.org" target="_blank" rel="noopener noreferrer nofollow" style={{ color: '#2563eb', fontSize: '0.875rem' }}>Distilled Spirits Council of the United States</a></li>
-              <li><a href="https://ttb.gov" target="_blank" rel="noopener noreferrer nofollow" style={{ color: '#2563eb', fontSize: '0.875rem' }}>TTB — Craft Beverage Modernization Resources</a></li>
+              <li><a href="https://ttb.gov" target="_blank" rel="noopener noreferrer nofollow" style={{ color: '#2563eb', fontSize: '0.875rem' }}>TTB , Craft Beverage Modernization Resources</a></li>
             </ul>
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
       {/* CTA */}
       <section style={{ background: 'var(--charcoal)', padding: '4rem 1.5rem', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
-          <p className="ornament">— ⬥ —</p>
+          <p className="ornament">,  ⬥ , </p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--white)', marginBottom: '1rem' }}>Ready to Explore Craft Spirits?</h2>
           <p style={{ color: '#8a7a6a', marginBottom: '2rem', lineHeight: 1.7, fontFamily: 'var(--font-display)' }}>Discover {locations.length}+ craft distilleries across {statesWithData} states.</p>
           <Link href="/browse" className="btn btn-amber" style={{ padding: '0.9rem 2.25rem', borderRadius: '50px', fontFamily: 'var(--font-display)' }}>Explore Distilleries →</Link>

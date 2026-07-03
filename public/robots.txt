@@ -50,7 +50,7 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-# Default rule — paused for editorial investment
+# Default rule , paused for editorial investment
 User-agent: *
 Disallow: /
 Allow: /robots.txt

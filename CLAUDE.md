@@ -1,4 +1,4 @@
-﻿# Craft Distillery Finder — CLAUDE.md
+﻿# Craft Distillery Finder , CLAUDE.md
 
 > Source of truth for Claude Code on this project. Last updated: 2026-04-30
 
@@ -32,7 +32,7 @@
 
 ## 4. E-E-A-T
 
-- Attribution: "Built by an experienced web developer" — no personal name
+- Attribution: "Built by an experienced web developer" , no personal name
 - IMPORTANT: Do not make health claims about alcohol. Factual directory content only.
 
 ## 5. Structured Data

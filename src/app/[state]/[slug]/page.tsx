@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const location = locations.find((l) => l.slug === slug);
   const stateName = getStateName(state);
   return {
-    title: `${location?.name ?? 'Craft Distillery'} — Distillery in ${stateName}`,
+    title: `${location?.name ?? 'Craft Distillery'} , Distillery in ${stateName}`,
     description: location?.description ?? `Craft distillery in ${stateName}. Tours, tastings, and artisan spirits.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}/${slug}` },
     openGraph: { title: `${location?.name} | Craft Distillery Finder`, description: location?.description, url: `https://craftdistilleryfinder.com/${state}/${slug}` },
@@ -186,7 +186,7 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
             </div>
           </div>
 
-          {/* Right — sticky panel */}
+          {/* Right , sticky panel */}
           <aside>
             <div style={{ background: 'var(--white)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-card)', overflow: 'hidden', border: '1px solid rgba(201,123,42,0.18)', position: 'sticky', top: '90px' }}>
               <div style={{ background: 'var(--charcoal)', padding: '1.25rem 1.5rem', borderBottom: '2px solid var(--amber)' }}>

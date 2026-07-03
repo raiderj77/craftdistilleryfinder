@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-displa
 const sourceSerif = Source_Serif_4({ subsets: ['latin'], variable: '--font-body', display: 'swap', weight: ['300','400','600','700'] });
 
 export const metadata: Metadata = {
-  title: { template: '%s | Craft Distillery Finder', default: 'Craft Distillery Finder — Discover Local Distilleries Across America' },
+  title: { template: '%s | Craft Distillery Finder', default: 'Craft Distillery Finder , Discover Local Distilleries Across America' },
   description: 'Discover the best craft distilleries across the United States. Tours, tastings, and artisan spirits from local distillers.',
   keywords: 'craft distillery, distillery near me, whiskey distillery, craft spirits, distillery tours, local distillery',
   metadataBase: new URL('https://craftdistilleryfinder.com'),

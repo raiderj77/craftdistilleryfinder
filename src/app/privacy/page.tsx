@@ -132,7 +132,7 @@ export default function PrivacyPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Google Ad Settings — ads.google.com/settings
+              Google Ad Settings , ads.google.com/settings
             </a>
           </li>
           <li>
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Digital Advertising Alliance Opt-Out — optout.aboutads.info
+              Digital Advertising Alliance Opt-Out , optout.aboutads.info
             </a>
           </li>
         </ul>
