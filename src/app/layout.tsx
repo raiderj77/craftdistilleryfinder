@@ -96,6 +96,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
             </div>
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+              <p style={{ color: "#c0a07a", fontSize: "0.85rem", marginBottom: "1rem", fontStyle: "italic" }}>Must be 21 or older to visit distillery tasting rooms. Please drink responsibly.</p>
               <p style={{ color: '#5a4a3a', fontSize: '0.85rem' }}>© 2026 Craft Distillery Finder. All rights reserved.</p>
               <div style={{ display: 'flex', gap: '1.5rem' }}>
                 {[['Privacy', '/privacy'], ['Terms', '/terms'], ['Contact', '/contact'], ['About', '/about']].map(([l, h]) => (
