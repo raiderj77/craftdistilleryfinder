@@ -99,6 +99,9 @@ export default function Home() {
           <p className="anim-fade-up anim-delay-2" style={{ fontSize: '1.05rem', color: '#c0a07a', marginBottom: '2.75rem', maxWidth: '500px', margin: '0 auto 2.75rem', fontFamily: 'var(--font-display)', lineHeight: 1.65 }}>
             Whiskey, gin, rum, vodka &amp; artisan spirits , handcrafted by local distillers in every state.
           </p>
+          <p className="anim-fade-up anim-delay-2" style={{ fontSize: "0.95rem", color: "#f59e0b", marginBottom: "2rem", maxWidth: "500px", margin: "0 auto 2rem", fontFamily: "var(--font-display)", lineHeight: 1.6, background: "rgba(201,123,42,0.1)", padding: "1rem", borderRadius: "8px", border: "1px solid rgba(201,123,42,0.3)" }}>
+            Our verified distillery directory is currently being rebuilt. We will be back online soon with expanded coverage and improved search.
+          </p>
           <div className="anim-fade-up anim-delay-3" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
             <a href="/alabama" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 2rem', borderRadius: 'var(--radius-pill, 50px)', fontWeight: 700, fontSize: '0.95rem', background: 'var(--amber)', color: 'var(--charcoal)', textDecoration: 'none', transition: 'background 0.2s' }}>Browse Distilleries →</a>
             <a href="/kentucky" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 2rem', borderRadius: 'var(--radius-pill, 50px)', fontWeight: 700, fontSize: '0.95rem', background: 'transparent', color: 'white', border: '2px solid rgba(201,168,76,0.4)', textDecoration: 'none', transition: 'background 0.2s' }}>Kentucky Bourbon Trail</a>
@@ -113,7 +116,7 @@ export default function Home() {
       <section style={{ background: 'var(--white)', borderBottom: '1px solid rgba(201,123,42,0.1)' }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
           {[
-            { n:`${locations.length}+`, l:'Distilleries Listed' },
+            { n:'Being Rebuilt', l:'Directory' },
             { n:`${statesWithData}`, l:'States Covered' },
             { n:'Tours', l:'& Tastings' },
             { n:'Craft', l:'& Artisan' },
@@ -261,7 +264,7 @@ export default function Home() {
         <div className="container" style={{ maxWidth: '600px' }}>
           <p className="ornament">,  ⬥ , </p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: 'var(--white)', marginBottom: '1rem' }}>Ready to Explore Craft Spirits?</h2>
-          <p style={{ color: '#8a7a6a', marginBottom: '2rem', lineHeight: 1.7, fontFamily: 'var(--font-display)' }}>Discover {locations.length}+ craft distilleries across {statesWithData} states.</p>
+          <p style={{ color: '#8a7a6a', marginBottom: '2rem', lineHeight: 1.7, fontFamily: 'var(--font-display)' }}>Our verified distillery directory is being rebuilt. Check back soon.</p>
           <Link href="/browse" className="btn btn-amber" style={{ padding: '0.9rem 2.25rem', borderRadius: '50px', fontFamily: 'var(--font-display)' }}>Explore Distilleries →</Link>
         </div>
       </section>
