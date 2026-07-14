@@ -63,6 +63,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     title: `Craft Distilleries in ${stateName}`,
     description: `Explore craft distilleries in ${stateName}. Find whiskey, gin, rum, and artisan spirit producers with tours and tastings.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}` },
+    robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
   };
 }
 
