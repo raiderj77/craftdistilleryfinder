@@ -19,7 +19,7 @@ export default function PrivacyPage() {
 
       <div style={{ lineHeight: "1.8", color: "#4b5563", fontSize: "1rem" }}>
         <p style={{ fontSize: "0.875rem", color: "#6b7280", marginBottom: "2rem" }}>
-          Last updated: April 2026
+          Last updated: July 13, 2026
         </p>
 
         <h2
@@ -54,9 +54,9 @@ export default function PrivacyPage() {
         </p>
         <ul style={{ marginBottom: "1rem", paddingLeft: "1.5rem" }}>
           <li style={{ marginBottom: "0.5rem" }}>
-            <strong>Automatic Data Collection:</strong> When you visit our site, we may automatically
-            collect certain information about your device, including information about your browser,
-            IP address, time zone, and some of the cookies that are installed on your device.
+            <strong>Service and Security Data:</strong> Hosting and security providers may process
+            request metadata such as IP address, browser type, requested page, and timestamp to
+            deliver the Site, prevent abuse, and diagnose failures.
           </li>
           <li style={{ marginBottom: "0.5rem" }}>
             <strong>Contact Information:</strong> If you contact us through our contact form, we may
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
             Comply with legal obligations
           </li>
           <li>
-            Display personalized advertising through Google AdSense
+            Maintain reliability and protect the Site from abuse
           </li>
         </ul>
 
@@ -100,13 +100,13 @@ export default function PrivacyPage() {
             color: "#1f2937",
           }}
         >
-          Google AdSense and Advertising
+          Advertising and Analytics Status
         </h2>
         <p>
-          We use Google AdSense to display advertisements on our website. Google AdSense uses cookies
-          and similar technologies to serve ads based on your prior visits to our website and other
-          websites. For more information about how Google uses information from sites or apps that use
-          Google services, please visit:{" "}
+          Google AdSense, Google Analytics, and Microsoft Clarity are not currently enabled. The Site
+          does not currently load their scripts or set their advertising or analytics cookies. A
+          publisher identifier may remain in ads.txt or public metadata solely for ownership
+          verification. Google's general privacy information is available at:{" "}
           <a
             href="https://www.google.com/intl/en/policies/privacy/"
             style={{ color: "#2563eb", textDecoration: "none" }}
@@ -117,12 +117,11 @@ export default function PrivacyPage() {
           </a>
         </p>
         <p style={{ marginTop: "1rem" }}>
-          We work with third-party advertising partners, including Google, who may use cookies to
-          serve ads based on your prior visits to this website or other websites.
+          If optional advertising or analytics is enabled later, we will update this policy and add
+          any required consent and opt-out controls before activation.
         </p>
         <p style={{ marginTop: "1rem" }}>
-          You may opt out of personalized advertising by visiting your ad settings or the industry
-          opt-out page:
+          General advertising preference resources include:
         </p>
         <ul style={{ marginTop: "0.5rem", paddingLeft: "1.5rem" }}>
           <li style={{ marginBottom: "0.5rem" }}>
@@ -158,11 +157,9 @@ export default function PrivacyPage() {
           Cookies
         </h2>
         <p>
-          We may use cookies on our website. A cookie is a small file that resides on your computer.
-          Cookies help us understand how you use our website. We use cookies to remember your
-          preferences and to track advertising conversions. Third-party advertising partners,
-          including Google, may also set cookies to serve personalized ads based on your browsing
-          history across websites.
+          The Site does not currently set optional advertising or analytics cookies. Hosting and
+          security providers may use essential mechanisms needed to deliver and protect the Site.
+          External websites you choose to visit have their own cookie and privacy practices.
         </p>
 
         <h2
@@ -233,7 +230,7 @@ export default function PrivacyPage() {
           </li>
         </ul>
         <p style={{ marginTop: "1rem" }}>
-          <strong>Global Privacy Control (GPC):</strong> Craft Distillery Finder honors Global Privacy Control (GPC) signals. When GPC is enabled in your browser or device, we treat it as a universal opt-out signal and disable tracking, advertising, and analytics scripts accordingly.
+          <strong>Global Privacy Control (GPC):</strong> The Site does not currently sell personal data or run targeted advertising. If processing subject to an opt-out is introduced later, we will honor applicable GPC signals.
         </p>
         <p style={{ marginTop: "1rem" }}>
           <strong>Data Sales:</strong> Craft Distillery Finder does not sell personal data to third parties.
@@ -265,9 +262,9 @@ export default function PrivacyPage() {
           Third-Party Services
         </h2>
         <p>
-          Our website uses Google AdSense and other third-party services. These services may collect
-          and process information about your online activities. We are not responsible for the privacy
-          practices of third-party services.
+          Hosting and security providers may process limited request metadata to operate the Site.
+          Google AdSense and optional analytics services are not currently enabled. External sites
+          linked from the directory are governed by their own privacy practices.
         </p>
 
         <h2
