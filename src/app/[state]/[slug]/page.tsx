@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     title: `${location?.name ?? 'Craft Distillery'} , Distillery in ${stateName}`,
     description: location?.description ?? `Craft distillery in ${stateName}. Tours, tastings, and artisan spirits.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}/${slug}` },
+    robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     openGraph: { title: `${location?.name} | Craft Distillery Finder`, description: location?.description, url: `https://craftdistilleryfinder.com/${state}/${slug}` },
   };
 }

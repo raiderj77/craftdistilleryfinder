@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://craftdistilleryfinder.com'),
   alternates: { canonical: 'https://craftdistilleryfinder.com' },
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    googleBot: { index: false, follow: true },
+    googleBot: { index: true, follow: true },
   },
   verification: { google: 'mX6FcyH9VqP8ZGkIPPlPKS4vhvkWOMcz4ebryDGvZjM' },
 };

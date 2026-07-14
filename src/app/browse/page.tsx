@@ -3,6 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Browse States",
   description: "Browse craft distilleries by state across the United States.",
+  robots: { index: false, follow: true },
 };
 
 const states = [
