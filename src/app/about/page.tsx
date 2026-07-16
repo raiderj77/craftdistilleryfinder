@@ -1,115 +1,36 @@
+import Link from 'next/link';
+
 export const metadata = {
-  title: "About Craft Distillery Finder",
-  description: "Learn about our mission to help people discover local craft distilleries.",
+  title: 'About the Craft Distillery Finder Rebuild',
+  description: 'How Craft Distillery Finder handles imported records, source verification, age-sensitive content, and publication decisions.',
 };
 
 export default function AboutPage() {
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "2rem" }}>
-      <h1
-        style={{
-          fontSize: "2.25rem",
-          fontWeight: "bold",
-          margin: "0 0 2rem 0",
-          color: "#1f2937",
-        }}
-      >
-        About Craft Distillery Finder
-      </h1>
-
-      <div style={{ lineHeight: "1.8", color: "#4b5563", fontSize: "1rem" }}>
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            margin: "2rem 0 1rem 0",
-            color: "#1f2937",
-          }}
-        >
-          Our Mission
-        </h2>
-        <p>
-          Craft Distillery Finder is dedicated to helping people discover and connect with craft
-          distilleries across the United States. We believe in supporting local spirits producers and
-          sharing the stories and craftsmanship behind America's growing craft spirits movement.
-        </p>
-
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            margin: "2rem 0 1rem 0",
-            color: "#1f2937",
-          }}
-        >
-          What We Do
-        </h2>
-        <p>
-          We maintain a comprehensive directory of craft distilleries across all 50 states. Our goal
-          is to provide accurate, up-to-date information about distillery locations, tours, tastings,
-          and the unique spirits each producer creates. Whether you're a spirits enthusiast, a casual
-          visitor, or someone looking for a unique local experience, our directory helps you find the
-          perfect craft distillery.
-        </p>
-
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            margin: "2rem 0 1rem 0",
-            color: "#1f2937",
-          }}
-        >
-          Why Craft Distilleries Matter
-        </h2>
-        <p>
-          Craft distilleries are vital to local economies and cultural heritage. They represent
-          entrepreneurship, innovation, and a commitment to quality that often gets lost in large-scale
-          production. By visiting craft distilleries and supporting local producers, you help sustain
-          these businesses and preserve important traditions.
-        </p>
-
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            margin: "2rem 0 1rem 0",
-            color: "#1f2937",
-          }}
-        >
-          Contact Us
-        </h2>
-        <p>
-          Have a distillery you'd like us to feature? Found outdated information? We'd love to hear
-          from you. Please use our{" "}
-          <a
-            href="/contact"
-            style={{
-              color: "#2563eb",
-              textDecoration: "none",
-            }}
-          >
-            contact form
-          </a>{" "}
-          to get in touch.
-        </p>
-
-        <div
-          style={{
-            marginTop: "3rem",
-            paddingTop: "2rem",
-            borderTop: "1px solid #e5e7eb",
-            fontSize: "0.875rem",
-            color: "#6b7280",
-          }}
-        >
-          <p style={{ margin: "0" }}>
-            Craft Distillery Finder is an independent directory service. We are not affiliated with
-            any distillery, distributor, or spirits brand. Information is provided for informational
-            purposes only.
-          </p>
+    <div>
+      <section className="home-hero" style={{ padding: '4.5rem 1.5rem' }}>
+        <div className="container" style={{ maxWidth: '840px', position: 'relative', zIndex: 1 }}>
+          <p className="section-label">About the directory</p>
+          <h1 style={{ color: 'var(--white)', fontSize: 'clamp(2rem,5vw,3.5rem)', marginBottom: '1rem' }}>IMPORTED RECORDS UNDER REVIEW</h1>
+          <p className="hero-copy" style={{ margin: 0 }}>Craft Distillery Finder is being rebuilt as a source-transparent visitor-planning directory. Current entries are discovery leads, not live-verified venue profiles.</p>
         </div>
-      </div>
+      </section>
+
+      <section style={{ padding: '4rem 1.5rem' }}>
+        <div className="container" style={{ maxWidth: '840px' }}>
+          <h2 className="section-title">What the current data contains</h2>
+          <p style={{ lineHeight: 1.85, marginBottom: '1rem' }}>The repository contains 596 records with a name, state, latitude, and longitude. Of those, 354 contain a city and 242 do not. The data represents all 50 states.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '2.5rem' }}>Every record carries exactly the same two generic labels: `Tastings` and `Tours`. The dataset contains no source, website, phone, hours, products, reservation, accessibility, age-policy, price, or review-date fields. Its origin and collection date are not recorded.</p>
+
+          <h2 className="section-title">Publication standard</h2>
+          <p style={{ lineHeight: 1.85, marginBottom: '1rem' }}>A future indexable profile must cite a current official distillery or operator source, state what was reviewed and when, and distinguish operator-published facts from editorial guidance.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '1rem' }}>Tour, tasting, visitor-access, product, price, hours, reservation, award, quality, scarcity, and health claims remain absent unless the cited source supports them. State and record pages remain excluded from search indexing during this rebuild.</p>
+          <p style={{ lineHeight: 1.85, marginBottom: '2.5rem' }}>Age and ID rules vary by venue and activity. Visitors must check the current policy and applicable law directly. If alcohol is part of a visit, arrange a safe ride.</p>
+
+          <h2 className="section-title">Corrections</h2>
+          <p style={{ lineHeight: 1.85 }}>To report a closed business, incorrect coordinate, or other problem, use the <Link href="/contact">contact page</Link>. Include the record URL and a current official source when possible. Submissions are reviewed before publication.</p>
+        </div>
+      </section>
     </div>
   );
 }

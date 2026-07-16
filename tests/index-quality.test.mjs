@@ -38,3 +38,44 @@ test('Googlebot can crawl pages to observe route-level noindex rules', () => {
   const robots = read('public/robots.txt');
   assert.match(robots, /User-agent:\s*Googlebot[\s\S]*?Allow:\s*\//i);
 });
+
+test('imported records are not presented as live-verified visitor profiles', () => {
+  const home = read('src/app/page.tsx');
+  const state = read('src/app/[state]/page.tsx');
+  const detail = read('src/app/[state]/[slug]/page.tsx');
+  const llms = read('public/llms.txt');
+
+  assert.match(home, /imported location records, not live-verified distillery profiles/i);
+  assert.match(home, /0[\s\S]*Live-verified profiles/);
+  assert.match(state, /Not live-verified/);
+  assert.match(detail, /does not record the original source or collection date/i);
+  assert.doesNotMatch(detail, /'@type': 'Winery'/);
+  assert.match(llms, /Bulk imported pages are not monetization-ready/);
+});
+
+test('unsupported tours, tastings, pricing, hours, and market claims stay retired', () => {
+  const home = read('src/app/page.tsx');
+  const about = read('src/app/about/page.tsx');
+  const contact = read('src/app/contact/page.tsx');
+  const terms = read('src/app/terms/page.tsx');
+
+  for (const source of [home, about]) {
+    assert.doesNotMatch(source, /\$15 to \$30|\$10 to \$20|over 2,000 craft|grown over 700%|sales exceeded \$6 billion/i);
+    assert.doesNotMatch(source, /Most craft distilleries (?:offer|are open)|verified distillery directory/i);
+  }
+  assert.doesNotMatch(contact, /respond.+2-3 business days/i);
+  assert.doesNotMatch(terms, /By using[\s\S]*at least 21 years of age/i);
+});
+
+test('source limits and accessible navigation are visible', () => {
+  const layout = read('src/app/layout.tsx');
+  const home = read('src/app/page.tsx');
+  const browse = read('src/app/browse/page.tsx');
+  const css = read('src/app/globals.css');
+
+  assert.match(home, /no source, website, phone, hours, product, reservation/i);
+  assert.match(layout, /Skip to main content/);
+  assert.match(layout, /age and ID policy/i);
+  assert.match(browse, /googleBot:\s*{\s*index:\s*false/);
+  assert.match(css, /:focus-visible/);
+});

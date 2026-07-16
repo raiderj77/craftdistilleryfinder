@@ -6,9 +6,9 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-displa
 const sourceSerif = Source_Serif_4({ subsets: ['latin'], variable: '--font-body', display: 'swap', weight: ['300','400','600','700'] });
 
 export const metadata: Metadata = {
-  title: { template: '%s | Craft Distillery Finder', default: 'Craft Distillery Finder , Discover Local Distilleries Across America' },
-  description: 'Discover the best craft distilleries across the United States. Tours, tastings, and artisan spirits from local distillers.',
-  keywords: 'craft distillery, distillery near me, whiskey distillery, craft spirits, distillery tours, local distillery',
+  title: { template: '%s | Craft Distillery Finder', default: 'Craft Distillery Finder - Imported Record Rebuild' },
+  description: 'Browse imported distillery location records and learn what to verify before planning a visit.',
+  keywords: 'distillery records, distillery directory, distillery map',
   metadataBase: new URL('https://craftdistilleryfinder.com'),
   alternates: { canonical: 'https://craftdistilleryfinder.com' },
   robots: {
@@ -40,13 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <header style={{ background: 'var(--charcoal)', borderBottom: '3px solid var(--amber)', position: 'sticky', top: 0, zIndex: 1000, boxShadow: '0 2px 20px rgba(28,24,20,0.5)' }}>
-          <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.9rem 1.5rem' }}>
+          <div className="container header-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.9rem 1.5rem' }}>
             <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
               <span style={{ fontSize: '1.5rem', lineHeight: 1 }}>🥃</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', color: 'var(--amber-lt)', letterSpacing: '0.01em' }}>Craft Distillery Finder</span>
             </a>
-            <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+            <nav aria-label="Primary navigation" className="primary-nav" style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
               <a href="/" style={{ color: 'var(--amber-pale)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', fontFamily: 'var(--font-display)' }}>Home</a>
               <a href="/browse" style={{ color: 'var(--amber-pale)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', fontFamily: 'var(--font-display)' }}>Browse States</a>
               <a href="/about" style={{ color: 'var(--amber-pale)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', fontFamily: 'var(--font-display)' }}>About</a>
@@ -54,14 +55,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
 
-        <main style={{ minHeight: 'calc(100vh - 340px)' }}>{children}</main>
+        <main id="main-content" style={{ minHeight: 'calc(100vh - 340px)' }}>{children}</main>
 
         <footer style={{ background: 'var(--charcoal)', borderTop: '3px solid var(--char-mid)', marginTop: '5rem', padding: '3rem 0 2rem' }}>
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '2.5rem' }}>
               <div>
                 <p style={{ fontFamily: 'var(--font-display)', color: 'var(--amber-lt)', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>🥃 Craft Distillery Finder</p>
-                <p style={{ color: '#8a7a6a', fontSize: '0.875rem', lineHeight: 1.7 }}>Discover artisan craft distilleries, tours, and tastings across the United States. Support local distillers crafting exceptional spirits.</p>
+                <p style={{ color: '#b9a38d', fontSize: '0.875rem', lineHeight: 1.7 }}>Imported distillery location records undergoing source and editorial review.</p>
               </div>
               <div>
                 <h4 style={{ color: 'var(--amber)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1rem', fontFamily: 'var(--font-display)' }}>Directory Sites</h4>
@@ -77,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-              <p style={{ color: "#c0a07a", fontSize: "0.85rem", marginBottom: "1rem", fontStyle: "italic" }}>Must be 21 or older to visit distillery tasting rooms. Please drink responsibly.</p>
+              <p style={{ color: "#d7bea5", fontSize: "0.85rem", marginBottom: "1rem", fontStyle: "italic" }}>Check each venue’s age and ID policy. If alcohol is part of your visit, arrange a safe ride and follow applicable laws.</p>
               <p style={{ color: '#5a4a3a', fontSize: '0.85rem' }}>© 2026 Craft Distillery Finder. All rights reserved.</p>
               <div style={{ display: 'flex', gap: '1.5rem' }}>
                 {[['Privacy', '/privacy'], ['Terms', '/terms'], ['Contact', '/contact'], ['About', '/about']].map(([l, h]) => (
