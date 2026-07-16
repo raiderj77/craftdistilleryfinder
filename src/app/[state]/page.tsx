@@ -10,12 +10,8 @@ function getMapboxImage(lat: number, lng: number, width = 800, height = 500): st
 }
 
 function getDistilleryPreview(d: { name: string; state: string; city: string; amenities: string[]; description: string }): string {
-  const amenityCount = d.amenities.length;
   const location = d.city ? `${d.city}, ${d.state}` : d.state;
-  if (amenityCount >= 2) {
-    return `Craft distillery in ${location} offering ${d.amenities.slice(0, 2).join(' and ').toLowerCase()}.`;
-  }
-  return `Craft distillery in ${location}. Open for visitors.`;
+  return `Imported distillery location record in ${location}. Verify the business and visitor details directly.`;
 }
 
 export const revalidate = 86400;
@@ -61,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const stateName = getStateName(state);
   return {
     title: `Craft Distilleries in ${stateName}`,
-    description: `Explore craft distilleries in ${stateName}. Find whiskey, gin, rum, and artisan spirit producers with tours and tastings.`,
+    description: `Browse imported distillery location records in ${stateName}. Verify each business and current visitor details directly.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}` },
     robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
   };
@@ -92,8 +88,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
             Craft Distilleries in <span style={{ color: 'var(--amber-lt)' }}>{stateName}</span>
           </h1>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <span className="chip chip-white">{spots.length} {spots.length===1?'Distillery':'Distilleries'} Listed</span>
-            <span style={{ color: '#c0a07a', fontSize: '0.9rem', fontFamily: 'var(--font-display)' }}>Tours &amp; tastings available</span>
+            <span className="chip chip-white">{spots.length} imported {spots.length===1?'record':'records'}</span>
+            <span style={{ color: '#d7bea5', fontSize: '0.9rem', fontFamily: 'var(--font-display)' }}>Not live-verified</span>
           </div>
         </div>
         <svg aria-hidden viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', display: 'block' }} preserveAspectRatio="none">
@@ -125,8 +121,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
           ) : (
             <div style={{ textAlign: 'center', padding: '5rem 2rem', background: 'var(--white)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-card)' }}>
               <p style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🥃</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--charcoal)', marginBottom: '0.75rem' }}>Coming Soon</h2>
-              <p style={{ color: 'var(--gray)' }}>{"We're adding distilleries in "}{stateName}{" , check back soon!"}</p>
+              <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--charcoal)', marginBottom: '0.75rem' }}>No Imported Records</h2>
+              <p style={{ color: 'var(--gray)' }}>The current dataset contains no records assigned to {stateName}.</p>
               <Link href="/" className="btn btn-amber" style={{ display: 'inline-flex', marginTop: '1.5rem' }}>Browse Other States</Link>
             </div>
           )}

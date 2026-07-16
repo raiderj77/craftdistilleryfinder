@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Browse States",
-  description: "Browse craft distilleries by state across the United States.",
-  robots: { index: false, follow: true },
+  description: "Browse imported distillery location records by state.",
+  robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
 };
 
 const states = [
@@ -83,7 +83,7 @@ export default function BrowsePage() {
           margin: "0 0 2rem 0",
         }}
       >
-        Find craft distilleries in your state
+        Browse imported location records. Verify every venue and visitor detail directly before planning a trip.
       </p>
 
       <div

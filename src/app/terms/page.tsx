@@ -117,14 +117,13 @@ export default function TermsPage() {
             color: "#1f2937",
           }}
         >
-          Age Verification Disclaimer
+          Age and Alcohol Disclaimer
         </h2>
         <p>
-          This website contains information about alcoholic beverages and craft distilleries. To visit
-          a distillery and participate in tastings, you must be at least 21 years of age. By using
-          this website, you represent and warrant that you are at least 21 years of age. We strongly
-          encourage responsible and legal consumption of alcoholic beverages in accordance with all
-          applicable federal, state, and local laws.
+          This website contains information about businesses that may produce or serve alcoholic beverages.
+          Age, identification, guest, tour, and tasting policies vary by venue and activity. Check the
+          current venue policy and applicable law before visiting. Do not drink and drive; arrange a safe
+          ride if alcohol is part of your visit.
         </p>
 
         <h2

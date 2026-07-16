@@ -10,12 +10,8 @@ function getMapboxImage(lat: number, lng: number, width = 800, height = 500): st
 }
 
 function getDistilleryPreview(d: { name: string; state: string; city: string; amenities: string[]; description: string }): string {
-  const amenityCount = d.amenities.length;
   const location = d.city ? `${d.city}, ${d.state}` : d.state;
-  if (amenityCount >= 2) {
-    return `Craft distillery in ${location} offering ${d.amenities.slice(0, 2).join(' and ').toLowerCase()}.`;
-  }
-  return `Craft distillery in ${location}. Open for visitors.`;
+  return `Imported distillery location record in ${location}. Verify the business and visitor details directly.`;
 }
 
 export const revalidate = 86400;
@@ -58,11 +54,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ state: string; slug: string }> }): Promise<Metadata> {
   const { state, slug } = await params;
-  const location = locations.find((l) => l.slug === slug);
+  const location = locations.find((l) => l.stateSlug === state && l.slug === slug);
   const stateName = getStateName(state);
   return {
     title: `${location?.name ?? 'Craft Distillery'} , Distillery in ${stateName}`,
-    description: location?.description ?? `Craft distillery in ${stateName}. Tours, tastings, and artisan spirits.`,
+    description: location ? `Imported location record for ${location.name} in ${stateName}. Verify current visitor details directly.` : `Imported distillery location record in ${stateName}.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}/${slug}` },
     robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     openGraph: { title: `${location?.name} | Craft Distillery Finder`, description: location?.description, url: `https://craftdistilleryfinder.com/${state}/${slug}` },
@@ -78,7 +74,7 @@ const AMENITY_ICONS: Record<string, string> = {
 
 export default async function DistilleryPage({ params }: { params: Promise<{ state: string; slug: string }> }) {
   const { state, slug } = await params;
-  const location = locations.find((l) => l.slug === slug);
+  const location = locations.find((l) => l.stateSlug === state && l.slug === slug);
   const stateName = getStateName(state);
 
   if (!location) {
@@ -103,14 +99,6 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
           { '@type': 'ListItem', position: 3, name: location.name, item: `https://craftdistilleryfinder.com/${state}/${slug}` },
         ],
       }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org', '@type': 'Winery',
-        name: location.name, description: location.description,
-        geo: { '@type': 'GeoCoordinates', latitude: location.lat, longitude: location.lng },
-        address: { '@type': 'PostalAddress', addressLocality: location.city, addressRegion: location.state, addressCountry: 'US' },
-        amenityFeature: location.amenities.map((a) => ({ '@type': 'LocationFeatureSpecification', name: a, value: true })),
-      }) }} />
-
       {/* Hero */}
       <div style={{ position: 'relative', height: '440px', overflow: 'hidden', background: 'linear-gradient(160deg, var(--charcoal) 0%, var(--char-mid) 100%)' }}>
         <img
@@ -128,7 +116,7 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)', color: 'white', marginBottom: '0.6rem', fontWeight: 800 }}>{location.name}</h1>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
             <span style={{ color: 'var(--amber-pale)', fontSize: '0.9rem', fontFamily: 'var(--font-display)' }}>📍 {location.city ? `${location.city}, ` : ''}{location.state}</span>
-            <span className="chip chip-white">🥃 Craft Distillery</span>
+            <span className="chip chip-white">Imported record</span>
           </div>
         </div>
         <svg aria-hidden viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', display: 'block' }} preserveAspectRatio="none">
@@ -144,14 +132,12 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
           <div>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--charcoal)', marginBottom: '1rem' }}>About This Distillery</h2>
             <p style={{ lineHeight: 1.9, marginBottom: '2.5rem', color: 'var(--text)', fontSize: '1.025rem' }}>
-              {location.name} is a craft distillery located in {location.city ? `${location.city}, ` : ''}{location.state}.{' '}
-              {location.amenities.length > 0 ? `Visitors can enjoy ${location.amenities.slice(0, 2).join(' and ').toLowerCase()}.` : 'Open for tastings and tours.'}{' '}
-              Find directions using the GPS coordinates below.
+              This imported record stores the name {location.name}, map coordinates, and {location.city ? `the city and state ${location.city}, ${location.state}` : `the state ${location.state}`}. The repository does not record the original source or collection date. Confirm that the business exists and check all visitor details through a current official source.
             </p>
 
             {location.amenities.length > 0 && (
               <>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--charcoal)', marginBottom: '1.25rem' }}>What&apos;s Available</h2>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--charcoal)', marginBottom: '1.25rem' }}>Generic Imported Labels</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.75rem', marginBottom: '2.5rem' }}>
                   {location.amenities.map((amenity) => (
                     <div key={amenity} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', background: 'var(--white)', padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', boxShadow: '0 1px 6px rgba(28,24,20,0.07)', border: '1px solid rgba(201,123,42,0.15)' }}>
@@ -182,7 +168,7 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
 
             <div style={{ background: 'rgba(201,123,42,0.06)', border: '1px solid rgba(201,123,42,0.2)', borderRadius: 'var(--radius-sm)', padding: '1rem 1.25rem' }}>
               <p style={{ fontSize: '0.82rem', color: '#667', lineHeight: 1.7 }}>
-                <strong style={{ color: 'var(--charcoal)' }}>Disclaimer:</strong> Information is provided for reference only. Always verify hours, tour availability, and any reservation requirements directly with the distillery before visiting.
+                <strong style={{ color: 'var(--charcoal)' }}>Before visiting:</strong> confirm operating status, address, hours, tours or tastings, reservations, prices, accessibility, products, and age/ID rules directly with the venue. If alcohol is part of the visit, arrange a safe ride.
               </p>
             </div>
           </div>
@@ -199,9 +185,9 @@ export default async function DistilleryPage({ params }: { params: Promise<{ sta
                   ['🌐 State', location.state],
                   ['🗺️ Latitude', location.lat.toFixed(5)],
                   ['🗺️ Longitude', location.lng.toFixed(5)],
-                  ['🥃 Offerings', `${location.amenities.length} listed`],
-                  ['🎟️ Entry', 'Varies by experience'],
-                  ['🏷️ Type', 'Craft Distillery'],
+                  ['Record labels', `${location.amenities.length} generic labels`],
+                  ['Visitor access', 'Not verified'],
+                  ['Record type', 'Imported location'],
                 ].map(([label, value]) => (
                   <div key={String(label)} style={{ paddingBottom: '0.85rem', marginBottom: '0.85rem', borderBottom: '1px solid rgba(28,24,20,0.07)' }}>
                     <div style={{ fontSize: '0.75rem', color: 'var(--gray)', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.2rem', fontFamily: 'var(--font-display)' }}>{label}</div>

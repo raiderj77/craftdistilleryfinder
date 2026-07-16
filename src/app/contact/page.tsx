@@ -53,10 +53,7 @@ export default function ContactPage() {
         >
           Email Us
         </h2>
-        <p>
-          The best way to reach us is by email. We typically respond to inquiries within 2-3 business
-          days.
-        </p>
+        <p>The best way to reach us is by email. A message does not guarantee publication or a particular response time.</p>
         <p style={{ marginBottom: "2rem" }}>
           <strong>General Inquiries:</strong>{" "}
           <a
@@ -75,16 +72,15 @@ export default function ContactPage() {
             color: "#1f2937",
           }}
         >
-          Submit Your Distillery
+          Submit a Venue Source
         </h2>
         <p>
-          Are you a craft distillery owner or manager? We'd like to feature your business in our
-          directory. When you contact us, please include:
+          If you own or manage a listed business, you may submit a current official source for review. Please include:
         </p>
         <ul style={{ paddingLeft: "1.5rem", marginBottom: "2rem" }}>
           <li style={{ marginBottom: "0.5rem" }}>Distillery name and location</li>
-          <li style={{ marginBottom: "0.5rem" }}>Brief description of your spirits and brand</li>
-          <li style={{ marginBottom: "0.5rem" }}>Tour and tasting availability</li>
+           <li style={{ marginBottom: "0.5rem" }}>The existing record URL, if applicable</li>
+           <li style={{ marginBottom: "0.5rem" }}>Current visitor, tour, or tasting information you want reviewed</li>
           <li style={{ marginBottom: "0.5rem" }}>Website and contact information</li>
           <li>Special amenities or features (event space, dog-friendly patio, etc.)</li>
         </ul>
@@ -100,8 +96,7 @@ export default function ContactPage() {
           Report Issues
         </h2>
         <p>
-          Found outdated information? Spotted an error on our site? Please let us know. Your feedback
-          helps us maintain accurate listings and provide the best experience for our visitors.
+          Found an outdated or incorrect record? Please include the page URL and a current official source when possible. Submissions are reviewed before publication.
         </p>
 
         <div
