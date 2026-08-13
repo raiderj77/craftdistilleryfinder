@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Source_Serif_4 } from 'next/font/google';
+import CreatorRevenueLink from '@/components/CreatorRevenueLink';
 import './globals.css';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: ['400','600','700','800'] });
@@ -73,7 +74,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h4 style={{ color: 'var(--amber)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1rem', fontFamily: 'var(--font-display)' }}>Tools</h4>
                 <ul style={{ listStyle: 'none' }}>
-                  {toolSites.map((s) => <li key={s.href} style={{ marginBottom: '0.4rem' }}><a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a></li>)}
+                  {toolSites.map((s) => (
+                    <li key={s.href} style={{ marginBottom: '0.4rem' }}>
+                      {s.href === 'https://creatorrevenuecalculator.com' ? (
+                        <CreatorRevenueLink style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</CreatorRevenueLink>
+                      ) : (
+                        <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a>
+                      )}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
