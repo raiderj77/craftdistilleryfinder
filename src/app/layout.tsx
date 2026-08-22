@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Source_Serif_4 } from 'next/font/google';
-import CreatorRevenueLink from '@/components/CreatorRevenueLink';
 import './globals.css';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: ['400','600','700','800'] });
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 
 const toolSites = [
   { name: 'Fiber Tools', href: 'https://fibertools.app' }, { name: 'Mind Check Tools', href: 'https://mindchecktools.com' },
-  { name: 'Flip My Case', href: 'https://flipmycase.com' }, { name: 'Creator Revenue Calculator', href: 'https://creatorrevenuecalculator.com' },
+  { name: 'Flip My Case', href: 'https://flipmycase.com' },
   { name: 'Contract Extract', href: 'https://contractextract.com' }, { name: 'Medical Bill Reader', href: 'https://medicalbillreader.com' },
   { name: 'Tax Break Tools', href: 'https://taxbreaktools.com' }, { name: '524 Tracker', href: 'https://524tracker.com' },
 ];
@@ -76,11 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ul style={{ listStyle: 'none' }}>
                   {toolSites.map((s) => (
                     <li key={s.href} style={{ marginBottom: '0.4rem' }}>
-                      {s.href === 'https://creatorrevenuecalculator.com' ? (
-                        <CreatorRevenueLink style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</CreatorRevenueLink>
-                      ) : (
-                        <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a>
-                      )}
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a>
                     </li>
                   ))}
                 </ul>
