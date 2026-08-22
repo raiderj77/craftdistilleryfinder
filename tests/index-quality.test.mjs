@@ -83,7 +83,11 @@ test('source limits and accessible navigation are visible', () => {
 test('the Creator footer link is removed while unrelated network links remain', () => {
   const layout = read('src/app/layout.tsx');
   assert.doesNotMatch(layout, /creatorrevenuecalculator|Creator Revenue Calculator/i);
-  assert.match(layout, /\{ name: 'Fiber Tools', href: 'https:\/\/fibertools\.app' \}/);
+  assert.match(layout, /\{ name: 'Mind Check Tools', href: 'https:\/\/mindchecktools\.com' \}/);
   assert.match(layout, /\{ name: 'Flip My Case', href: 'https:\/\/flipmycase\.com' \}/);
   assert.equal(existsSync(new URL('../src/components/CreatorRevenueLink.tsx', import.meta.url)), false);
+});
+
+test('the footer does not publish a FiberTools cross-site link', () => {
+  assert.doesNotMatch(read('src/app/layout.tsx'), /https:\/\/(?:www\.)?fibertools\.app/i);
 });
