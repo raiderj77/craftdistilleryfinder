@@ -19,19 +19,6 @@ export const metadata: Metadata = {
   verification: { google: 'mX6FcyH9VqP8ZGkIPPlPKS4vhvkWOMcz4ebryDGvZjM' },
 };
 
-const toolSites = [
-  { name: 'Fiber Tools', href: 'https://fibertools.app' },
-  { name: 'Flip My Case', href: 'https://flipmycase.com' },
-  { name: 'Contract Extract', href: 'https://contractextract.com' }, { name: 'Medical Bill Reader', href: 'https://medicalbillreader.com' },
-  { name: 'Tax Break Tools', href: 'https://taxbreaktools.com' }, { name: '524 Tracker', href: 'https://524tracker.com' },
-];
-const directorySites = [
-  { name: 'Public Boat Ramps', href: 'https://publicboatramps.com' }, { name: 'Find Swim Spots', href: 'https://findswimspots.com' },
-  { name: 'Drive-In Tonight', href: 'https://driveintonight.com' }, { name: 'All Skate Parks', href: 'https://allskateparks.com' },
-  { name: 'Rockhounding Finder', href: 'https://rockhoundingfinder.com' }, { name: 'Nearby Escape Rooms', href: 'https://nearbyescaperooms.com' },
-  { name: 'All Skating Rinks', href: 'https://allskatingrinks.com' }, { name: 'Soak USA', href: 'https://soakusa.net' },
-];
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${sourceSerif.variable}`}>
@@ -63,22 +50,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p style={{ fontFamily: 'var(--font-display)', color: 'var(--amber-lt)', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>🥃 Craft Distillery Finder</p>
                 <p style={{ color: '#b9a38d', fontSize: '0.875rem', lineHeight: 1.7 }}>Imported distillery location records undergoing source and editorial review.</p>
-              </div>
-              <div>
-                <h4 style={{ color: 'var(--amber)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1rem', fontFamily: 'var(--font-display)' }}>Directory Sites</h4>
-                <ul style={{ listStyle: 'none' }}>
-                  {directorySites.map((s) => <li key={s.href} style={{ marginBottom: '0.4rem' }}><a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a></li>)}
-                </ul>
-              </div>
-              <div>
-                <h4 style={{ color: 'var(--amber)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1rem', fontFamily: 'var(--font-display)' }}>Tools</h4>
-                <ul style={{ listStyle: 'none' }}>
-                  {toolSites.map((s) => (
-                    <li key={s.href} style={{ marginBottom: '0.4rem' }}>
-                      <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: '#8a7a6a', fontSize: '0.875rem', textDecoration: 'none' }}>{s.name}</a>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
