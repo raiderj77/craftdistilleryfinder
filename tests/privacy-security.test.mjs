@@ -24,3 +24,7 @@ test("public disclosures and publisher verification match production", () => {
   assert.match(privacy, /not\s+currently\s+enabled/i);
   assert.match(read("public/ads.txt"), /pub-7171402107622932/);
 });
+
+test("the public footer does not cross-link to MindCheck Tools", () => {
+  assert.doesNotMatch(layout, /mindchecktools\.com|Mind Check Tools/i);
+});
