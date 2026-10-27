@@ -98,14 +98,14 @@
     ]
   },
   {
-    "name": "Elysian Desert Distilleries",
+    "name": "Carefree Spirits Distillery",
     "slug": "elysian-desert-distilleries",
     "state": "Arizona",
     "stateSlug": "arizona",
-    "city": "Carefree",
+    "city": "Cave Creek",
     "lat": 33.824033,
     "lng": -111.923031,
-    "description": "Elysian Desert Distilleries is a craft distillery in Carefree, Arizona.",
+    "description": "Carefree Spirits Distillery is a craft distillery in Cave Creek, Arizona.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -162,20 +162,6 @@
     "lat": 34.526818,
     "lng": -90.585887,
     "description": "Delta Dirt Distillery is a craft distillery in Helena, Arkansas.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
-    "name": "Eureka Springs Brewery",
-    "slug": "eureka-springs-brewery",
-    "state": "Arkansas",
-    "stateSlug": "arkansas",
-    "city": "Eureka Springs",
-    "lat": 36.389486,
-    "lng": -93.706733,
-    "description": "Eureka Springs Brewery is a craft distillery in Eureka Springs, Arkansas.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -336,14 +322,14 @@
     ]
   },
   {
-    "name": "Cutler's Artisan Distillery",
+    "name": "Cutler's Distillery & Public House",
     "slug": "cutlers-artisan-distillery",
     "state": "California",
     "stateSlug": "california",
     "city": "Santa Barbara",
     "lat": 34.414697,
     "lng": -119.690699,
-    "description": "Cutler's Artisan Distillery is a craft distillery in Santa Barbara, California.",
+    "description": "Cutler's Distillery & Public House is a craft distillery in Santa Barbara, California.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -410,10 +396,10 @@
     "slug": "j-riley-distillery",
     "state": "California",
     "stateSlug": "california",
-    "city": "",
+    "city": "Redlands",
     "lat": 34.058898,
     "lng": -117.186774,
-    "description": "J. Riley Distillery is a craft distillery in California.",
+    "description": "J. Riley Distillery is a craft distillery in Redlands, California.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -424,10 +410,10 @@
     "slug": "jettywave-distillery",
     "state": "California",
     "stateSlug": "california",
-    "city": "",
+    "city": "Half Moon Bay",
     "lat": 37.504509,
     "lng": -122.487911,
-    "description": "Jettywave Distillery is a craft distillery in California.",
+    "description": "Jettywave Distillery is a craft distillery in Half Moon Bay, California.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -508,10 +494,10 @@
     "slug": "spirit-works-distillery",
     "state": "California",
     "stateSlug": "california",
-    "city": "",
+    "city": "Sebastopol",
     "lat": 38.404557,
     "lng": -122.821804,
-    "description": "Spirit Works Distillery is a craft distillery in California.",
+    "description": "Spirit Works Distillery is a craft distillery in Sebastopol, California.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -592,10 +578,10 @@
     "slug": "10th-mountain-whiskey-spirit-company",
     "state": "Colorado",
     "stateSlug": "colorado",
-    "city": "",
+    "city": "Vail",
     "lat": 39.6413,
     "lng": -106.373699,
-    "description": "10th Mountain Whiskey & Spirit Company is a craft distillery in Colorado.",
+    "description": "10th Mountain Whiskey & Spirit Company is a craft distillery in Vail, Colorado.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -924,14 +910,14 @@
     ]
   },
   {
-    "name": "Tower 56 Distilling",
+    "name": "477 Distilling",
     "slug": "tower-56-distilling",
     "state": "Colorado",
     "stateSlug": "colorado",
     "city": "Greeley",
     "lat": 40.42427,
     "lng": -104.692411,
-    "description": "Tower 56 Distilling is a craft distillery in Greeley, Colorado.",
+    "description": "477 Distilling is a craft distillery in Greeley, Colorado.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1040,10 +1026,10 @@
     "slug": "cotton-reed",
     "state": "District of Columbia",
     "stateSlug": "district-of-columbia",
-    "city": "",
+    "city": "Washington",
     "lat": 38.909542,
     "lng": -76.997709,
-    "description": "Cotton & Reed is a craft distillery in District of Columbia.",
+    "description": "Cotton & Reed is a craft distillery in Washington, District of Columbia.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1236,10 +1222,10 @@
     "slug": "sugar-works-distillery",
     "state": "Florida",
     "stateSlug": "florida",
-    "city": "",
+    "city": "New Smyrna Beach",
     "lat": 29.025641,
     "lng": -80.926565,
-    "description": "Sugar Works Distillery is a craft distillery in Florida.",
+    "description": "Sugar Works Distillery is a craft distillery in New Smyrna Beach, Florida.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1358,20 +1344,6 @@
     ]
   },
   {
-    "name": "Omega Gin Company",
-    "slug": "omega-gin-company",
-    "state": "Georgia",
-    "stateSlug": "georgia",
-    "city": "",
-    "lat": 31.372069,
-    "lng": -83.565766,
-    "description": "Omega Gin Company is a craft distillery in Georgia.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
     "name": "Richmand Rum",
     "slug": "richmand-rum",
     "state": "Georgia",
@@ -1470,14 +1442,14 @@
     ]
   },
   {
-    "name": "Idaho Mercantille Distillers",
+    "name": "Idaho Mercantile Distillers",
     "slug": "idaho-mercantille-distillers",
     "state": "Idaho",
     "stateSlug": "idaho",
     "city": "Shelley",
     "lat": 43.387592,
     "lng": -112.119578,
-    "description": "Idaho Mercantille Distillers is a craft distillery in Shelley, Idaho.",
+    "description": "Idaho Mercantile Distillers is a craft distillery in Shelley, Idaho.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1514,26 +1486,26 @@
   {
     "name": "Stein Distillery",
     "slug": "stein-distillery",
-    "state": "Idaho",
-    "stateSlug": "idaho",
-    "city": "",
+    "state": "Oregon",
+    "stateSlug": "oregon",
+    "city": "Joseph",
     "lat": 45.35784,
     "lng": -117.229539,
-    "description": "Stein Distillery is a craft distillery in Idaho.",
+    "description": "Stein Distillery is a craft distillery in Joseph, Oregon.",
     "amenities": [
       "Tastings",
       "Tours"
     ]
   },
   {
-    "name": "UpNorth Distillery",
+    "name": "Up North Distillery",
     "slug": "upnorth-distillery",
     "state": "Idaho",
     "stateSlug": "idaho",
-    "city": "",
+    "city": "Post Falls",
     "lat": 47.7167,
     "lng": -117.000404,
-    "description": "UpNorth Distillery is a craft distillery in Idaho.",
+    "description": "Up North Distillery is a craft distillery in Post Falls, Idaho.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1556,12 +1528,12 @@
   {
     "name": "Artisan Grain Distillery",
     "slug": "artisan-grain-distillery",
-    "state": "Illinois",
-    "stateSlug": "illinois",
-    "city": "",
+    "state": "Iowa",
+    "stateSlug": "iowa",
+    "city": "Davenport",
     "lat": 41.521624,
     "lng": -90.570157,
-    "description": "Artisan Grain Distillery is a craft distillery in Illinois.",
+    "description": "Artisan Grain Distillery is a craft distillery in Davenport, Iowa.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1600,10 +1572,10 @@
     "slug": "blaum-bros-distillery",
     "state": "Illinois",
     "stateSlug": "illinois",
-    "city": "",
+    "city": "Galena",
     "lat": 42.406587,
     "lng": -90.410291,
-    "description": "Blaum Bros Distillery is a craft distillery in Illinois.",
+    "description": "Blaum Bros. Distilling Co. is a craft distillery in Galena, Illinois.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -1764,20 +1736,6 @@
     ]
   },
   {
-    "name": "Circle City Whiskey Co.",
-    "slug": "circle-city-whiskey-co",
-    "state": "Indiana",
-    "stateSlug": "indiana",
-    "city": "Indianapolis",
-    "lat": 39.84047,
-    "lng": -86.126396,
-    "description": "Circle City Whiskey Co. is a craft distillery in Indianapolis, Indiana.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
     "name": "Dusty Barn Distillery",
     "slug": "dusty-barn-distillery",
     "state": "Indiana",
@@ -1838,10 +1796,10 @@
     "slug": "journeymans-distillery",
     "state": "Indiana",
     "stateSlug": "indiana",
-    "city": "",
+    "city": "Valparaiso",
     "lat": 41.464428,
     "lng": -87.066311,
-    "description": "Journeyman's Distillery is a craft distillery in Indiana.",
+    "description": "Journeyman Distillery is a craft distillery in Valparaiso, Indiana.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -2622,10 +2580,10 @@
     "slug": "second-sight-spirits",
     "state": "Kentucky",
     "stateSlug": "kentucky",
-    "city": "",
+    "city": "Ludlow",
     "lat": 39.093488,
     "lng": -84.548458,
-    "description": "Second Sight Spirits is a craft distillery in Kentucky.",
+    "description": "Second Sight Spirits is a craft distillery in Ludlow, Kentucky.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -2720,10 +2678,10 @@
     "slug": "wild-turkey-distillery",
     "state": "Kentucky",
     "stateSlug": "kentucky",
-    "city": "",
+    "city": "Lawrenceburg",
     "lat": 38.040562,
     "lng": -84.853836,
-    "description": "Wild Turkey Distillery is a craft distillery in Kentucky.",
+    "description": "Wild Turkey Distillery is a craft distillery in Lawrenceburg, Kentucky.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3070,10 +3028,10 @@
     "slug": "oversea-distillery-bar",
     "state": "Maryland",
     "stateSlug": "maryland",
-    "city": "",
+    "city": "Columbia",
     "lat": 39.174481,
     "lng": -76.834633,
-    "description": "Oversea Distillery & Bar is a craft distillery in Maryland.",
+    "description": "Oversea Distillery & Bar is a craft distillery in Columbia, Maryland.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3238,10 +3196,10 @@
     "slug": "south-hollow-spirits",
     "state": "Massachusetts",
     "stateSlug": "massachusetts",
-    "city": "",
+    "city": "Truro",
     "lat": 42.029778,
     "lng": -70.078113,
-    "description": "South Hollow Spirits is a craft distillery in Massachusetts.",
+    "description": "South Hollow Spirits is a craft distillery in Truro, Massachusetts.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3252,10 +3210,10 @@
     "slug": "triple-eight-distillery",
     "state": "Massachusetts",
     "stateSlug": "massachusetts",
-    "city": "",
+    "city": "Nantucket",
     "lat": 41.263422,
     "lng": -70.131409,
-    "description": "Triple Eight Distillery is a craft distillery in Massachusetts.",
+    "description": "Triple Eight Distillery is a craft distillery in Nantucket, Massachusetts.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3644,10 +3602,10 @@
     "slug": "duluth-whiskey-project",
     "state": "Minnesota",
     "stateSlug": "minnesota",
-    "city": "",
+    "city": "Duluth",
     "lat": 46.765164,
     "lng": -92.126218,
-    "description": "Duluth Whiskey Project is a craft distillery in Minnesota.",
+    "description": "Duluth Whiskey Project is a craft distillery in Duluth, Minnesota.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3732,20 +3690,6 @@
     "lat": 45.864506,
     "lng": -95.147195,
     "description": "Panther Distillery is a craft distillery in Minnesota.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
-    "name": "Red Locks Irish Whiskey",
-    "slug": "red-locks-irish-whiskey",
-    "state": "Minnesota",
-    "stateSlug": "minnesota",
-    "city": "Minneapolis",
-    "lat": 45.001622,
-    "lng": -93.270689,
-    "description": "Red Locks Irish Whiskey is a craft distillery in Minneapolis, Minnesota.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -3934,20 +3878,6 @@
     ]
   },
   {
-    "name": "NYX - Spirits Lounge",
-    "slug": "nyx-spirits-lounge",
-    "state": "Missouri",
-    "stateSlug": "missouri",
-    "city": "Gladstone",
-    "lat": 39.223025,
-    "lng": -94.575401,
-    "description": "NYX - Spirits Lounge is a craft distillery in Gladstone, Missouri.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
     "name": "Restless Spirits Distilling Company",
     "slug": "restless-spirits-distilling-company",
     "state": "Missouri",
@@ -4078,10 +4008,10 @@
     "slug": "dry-hills-distillery",
     "state": "Montana",
     "stateSlug": "montana",
-    "city": "",
+    "city": "Bozeman",
     "lat": 45.672793,
     "lng": -111.18763,
-    "description": "Dry Hills Distillery is a craft distillery in Montana.",
+    "description": "Dry Hills Distillery is a craft distillery in Bozeman, Montana.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4260,10 +4190,10 @@
     "slug": "blue-rascal-distillery",
     "state": "New Jersey",
     "stateSlug": "new-jersey",
-    "city": "",
+    "city": "Hammonton",
     "lat": 39.633711,
     "lng": -74.806777,
-    "description": "Blue Rascal Distillery is a craft distillery in New Jersey.",
+    "description": "Blue Rascal Distillery is a craft distillery in Hammonton, New Jersey.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4400,10 +4330,10 @@
     "slug": "little-water-distillery",
     "state": "New Jersey",
     "stateSlug": "new-jersey",
-    "city": "",
+    "city": "Atlantic City",
     "lat": 39.368219,
     "lng": -74.423191,
-    "description": "Little Water Distillery is a craft distillery in New Jersey.",
+    "description": "Little Water Distillery is a craft distillery in Atlantic City, New Jersey.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4426,12 +4356,12 @@
   {
     "name": "Philadelphia Distilling",
     "slug": "philadelphia-distilling",
-    "state": "New Jersey",
-    "stateSlug": "new-jersey",
-    "city": "",
+    "state": "Pennsylvania",
+    "stateSlug": "pennsylvania",
+    "city": "Philadelphia",
     "lat": 39.965636,
     "lng": -75.135386,
-    "description": "Philadelphia Distilling is a craft distillery in New Jersey.",
+    "description": "Philadelphia Distilling is a craft distillery in Philadelphia, Pennsylvania.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4446,20 +4376,6 @@
     "lat": 40.037902,
     "lng": -74.72738,
     "description": "Recklesstown Farm Distillery is a craft distillery in New Jersey.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
-    "name": "Source Farmhouse Brewery",
-    "slug": "source-farmhouse-brewery",
-    "state": "New Jersey",
-    "stateSlug": "new-jersey",
-    "city": "",
-    "lat": 40.282051,
-    "lng": -74.172899,
-    "description": "Source Farmhouse Brewery is a craft distillery in New Jersey.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4596,10 +4512,10 @@
     "slug": "albany-distilling-company",
     "state": "New York",
     "stateSlug": "new-york",
-    "city": "",
+    "city": "Albany",
     "lat": 42.675628,
     "lng": -73.780516,
-    "description": "Albany Distilling Company is a craft distillery in New York.",
+    "description": "Albany Distilling Company is a craft distillery in Albany, New York.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4638,10 +4554,10 @@
     "slug": "buffalo-distilling-company",
     "state": "New York",
     "stateSlug": "new-york",
-    "city": "",
+    "city": "Buffalo",
     "lat": 42.874988,
     "lng": -78.845524,
-    "description": "Buffalo Distilling Company is a craft distillery in New York.",
+    "description": "Buffalo Distilling Company is a craft distillery in Buffalo, New York.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4736,10 +4652,10 @@
     "slug": "hartmans-distilling-co",
     "state": "New York",
     "stateSlug": "new-york",
-    "city": "",
+    "city": "Buffalo",
     "lat": 42.869885,
     "lng": -78.868661,
-    "description": "Hartman's Distilling Co. is a craft distillery in New York.",
+    "description": "Hartman's Distilling Co. is a craft distillery in Buffalo, New York.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -4932,10 +4848,10 @@
     "slug": "springbrook-hollow-farm-distillery",
     "state": "New York",
     "stateSlug": "new-york",
-    "city": "",
+    "city": "Fort Ann",
     "lat": 43.404804,
     "lng": -73.613229,
-    "description": "Springbrook Hollow Farm Distillery is a craft distillery in New York.",
+    "description": "Springbrook Hollow Farm Distillery is a craft distillery in Fort Ann, New York.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -5184,10 +5100,10 @@
     "slug": "fainting-goat-spirits",
     "state": "North Carolina",
     "stateSlug": "north-carolina",
-    "city": "",
+    "city": "Greensboro",
     "lat": 36.065944,
     "lng": -79.79166,
-    "description": "Fainting Goat Spirits is a craft distillery in North Carolina.",
+    "description": "Fainting Goat Spirits is a craft distillery in Greensboro, North Carolina.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -5338,10 +5254,10 @@
     "slug": "two-trees-distilling-company",
     "state": "North Carolina",
     "stateSlug": "north-carolina",
-    "city": "",
+    "city": "Fletcher",
     "lat": 35.440489,
     "lng": -82.497288,
-    "description": "Two Trees Distilling Company is a craft distillery in North Carolina.",
+    "description": "Two Trees Distilling Company is a craft distillery in Fletcher, North Carolina.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -5506,10 +5422,10 @@
     "slug": "west-end-distillery",
     "state": "Ohio",
     "stateSlug": "ohio",
-    "city": "",
+    "city": "Athens",
     "lat": 39.333113,
     "lng": -82.111867,
-    "description": "West End Distillery is a craft distillery in Ohio.",
+    "description": "West End Distillery is a craft distillery in Athens, Ohio.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -5618,10 +5534,10 @@
     "slug": "bendistillery",
     "state": "Oregon",
     "stateSlug": "oregon",
-    "city": "",
+    "city": "Bend",
     "lat": 44.160282,
     "lng": -121.359076,
-    "description": "Bendistillery is a craft distillery in Oregon.",
+    "description": "Bendistillery is a craft distillery in Bend, Oregon.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -5866,14 +5782,14 @@
     ]
   },
   {
-    "name": "Brandywine Branch Distillers",
+    "name": "Revivalist Spirits Distillery / Botanery Barn",
     "slug": "brandywine-branch-distillers",
     "state": "Pennsylvania",
     "stateSlug": "pennsylvania",
     "city": "Elverson",
     "lat": 40.16019,
     "lng": -75.799227,
-    "description": "Brandywine Branch Distillers is a craft distillery in Elverson, Pennsylvania.",
+    "description": "Revivalist Spirits Distillery / Botanery Barn is a craft distillery in Elverson, Pennsylvania.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6160,14 +6076,14 @@
     ]
   },
   {
-    "name": "TH Distilling",
+    "name": "Himmel House Spirits",
     "slug": "th-distilling",
     "state": "Pennsylvania",
     "stateSlug": "pennsylvania",
     "city": "Philadelphia",
     "lat": 39.926608,
     "lng": -75.174644,
-    "description": "TH Distilling is a craft distillery in Philadelphia, Pennsylvania.",
+    "description": "Himmel House Spirits is a craft distillery in Philadelphia, Pennsylvania.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6220,10 +6136,10 @@
     "slug": "the-industrious-spirit-company",
     "state": "Rhode Island",
     "stateSlug": "rhode-island",
-    "city": "",
+    "city": "Providence",
     "lat": 41.826777,
     "lng": -71.433764,
-    "description": "The Industrious Spirit Company is a craft distillery in Rhode Island.",
+    "description": "The Industrious Spirit Company is a craft distillery in Providence, Rhode Island.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6248,10 +6164,10 @@
     "slug": "firefly-distillery",
     "state": "South Carolina",
     "stateSlug": "south-carolina",
-    "city": "",
+    "city": "North Charleston",
     "lat": 32.870792,
     "lng": -79.982907,
-    "description": "FireFly Distillery is a craft distillery in South Carolina.",
+    "description": "Firefly Distillery is a craft distillery in North Charleston, South Carolina.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6288,12 +6204,12 @@
   {
     "name": "Kentucky Mist Distillery",
     "slug": "kentucky-mist-distillery",
-    "state": "South Carolina",
-    "stateSlug": "south-carolina",
-    "city": "",
+    "state": "Kentucky",
+    "stateSlug": "kentucky",
+    "city": "Whitesburg",
     "lat": 33.800536,
     "lng": -78.745222,
-    "description": "Kentucky Mist Distillery is a craft distillery in South Carolina.",
+    "description": "Kentucky Mist Distillery is a craft distillery in Whitesburg, Kentucky.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6346,10 +6262,10 @@
     "slug": "big-machine-distillery-tavern",
     "state": "Tennessee",
     "stateSlug": "tennessee",
-    "city": "Berry Hill",
+    "city": "Nashville",
     "lat": 36.11397,
     "lng": -86.766397,
-    "description": "Big Machine Distillery & Tavern is a craft distillery in Berry Hill, Tennessee.",
+    "description": "Big Machine Distillery & Tavern is a craft distillery in Nashville, Tennessee.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6444,10 +6360,10 @@
     "slug": "gutter-bound-distillery",
     "state": "Tennessee",
     "stateSlug": "tennessee",
-    "city": "",
+    "city": "Hurricane Mills",
     "lat": 35.884537,
     "lng": -87.796677,
-    "description": "Gutter Bound Distillery is a craft distillery in Tennessee.",
+    "description": "Gutter Bound Distillery is a craft distillery in Hurricane Mills, Tennessee.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6458,10 +6374,10 @@
     "slug": "jack-daniels",
     "state": "Tennessee",
     "stateSlug": "tennessee",
-    "city": "",
+    "city": "Lynchburg",
     "lat": 35.264828,
     "lng": -86.402821,
-    "description": "Jack Daniel's is a craft distillery in Tennessee.",
+    "description": "Jack Daniel's is a craft distillery in Lynchburg, Tennessee.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6836,10 +6752,10 @@
     "slug": "garrison-brothers-distillery",
     "state": "Texas",
     "stateSlug": "texas",
-    "city": "",
+    "city": "Hye",
     "lat": 30.217427,
     "lng": -98.566598,
-    "description": "Garrison Brothers Distillery is a craft distillery in Texas.",
+    "description": "Garrison Brothers Distillery is a craft distillery in Hye, Texas.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -6972,20 +6888,6 @@
     ]
   },
   {
-    "name": "Roughhouse Brewing",
-    "slug": "roughhouse-brewing",
-    "state": "Texas",
-    "stateSlug": "texas",
-    "city": "San Marcos",
-    "lat": 29.936376,
-    "lng": -98.061385,
-    "description": "Roughhouse Brewing is a craft distillery in San Marcos, Texas.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
     "name": "Salvation Spirits Distillery",
     "slug": "salvation-spirits-distillery",
     "state": "Texas",
@@ -7018,10 +6920,10 @@
     "slug": "sledge-distillery-distillation-bldg",
     "state": "Texas",
     "stateSlug": "texas",
-    "city": "",
+    "city": "Tolar",
     "lat": 32.301984,
     "lng": -97.881662,
-    "description": "Sledge Distillery - Distillation Bldg is a craft distillery in Texas.",
+    "description": "Sledge Distillery is a craft distillery in Tolar, Texas.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7214,10 +7116,10 @@
     "slug": "outlaw-distillery",
     "state": "Utah",
     "stateSlug": "utah",
-    "city": "Sandy",
+    "city": "Midvale",
     "lat": 40.59978,
     "lng": -111.906599,
-    "description": "Outlaw Distillery is a craft distillery in Sandy, Utah.",
+    "description": "Outlaw Distillery is a craft distillery in Midvale, Utah.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7298,10 +7200,10 @@
     "slug": "caledonia-spirits-inc",
     "state": "Vermont",
     "stateSlug": "vermont",
-    "city": "",
+    "city": "Montpelier",
     "lat": 44.27486,
     "lng": -72.594523,
-    "description": "Caledonia Spirits Inc. is a craft distillery in Vermont.",
+    "description": "Barr Hill by Caledonia Spirits is a craft distillery in Montpelier, Vermont.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7476,20 +7378,6 @@
     ]
   },
   {
-    "name": "Old Still",
-    "slug": "old-still",
-    "state": "Virginia",
-    "stateSlug": "virginia",
-    "city": "",
-    "lat": 37.387824,
-    "lng": -77.55201,
-    "description": "Old Still is a craft distillery in Virginia.",
-    "amenities": [
-      "Tastings",
-      "Tours"
-    ]
-  },
-  {
     "name": "Open Road Distilling Co.",
     "slug": "open-road-distilling-co",
     "state": "Virginia",
@@ -7590,12 +7478,12 @@
   {
     "name": "Swilled Dog",
     "slug": "swilled-dog",
-    "state": "Virginia",
-    "stateSlug": "virginia",
-    "city": "",
+    "state": "West Virginia",
+    "stateSlug": "west-virginia",
+    "city": "Upper Tract",
     "lat": 38.783136,
     "lng": -79.285073,
-    "description": "Swilled Dog is a craft distillery in Virginia.",
+    "description": "Swilled Dog is a craft distillery in Upper Tract, West Virginia.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7634,10 +7522,10 @@
     "slug": "virginia-distillery-company",
     "state": "Virginia",
     "stateSlug": "virginia",
-    "city": "",
+    "city": "Lovingston",
     "lat": 37.782821,
     "lng": -78.863416,
-    "description": "Virginia Distillery Company is a craft distillery in Virginia.",
+    "description": "Virginia Distillery Co. is a craft distillery in Lovingston, Virginia.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7704,10 +7592,10 @@
     "slug": "chambers-bay-distillery",
     "state": "Washington",
     "stateSlug": "washington",
-    "city": "",
+    "city": "University Place",
     "lat": 47.241305,
     "lng": -122.529413,
-    "description": "Chambers Bay Distillery is a craft distillery in Washington.",
+    "description": "Chambers Bay Distillery is a craft distillery in University Place, Washington.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7982,12 +7870,12 @@
   {
     "name": "Liberty Pole Spirits",
     "slug": "liberty-pole-spirits",
-    "state": "West Virginia",
-    "stateSlug": "west-virginia",
-    "city": "",
+    "state": "Pennsylvania",
+    "stateSlug": "pennsylvania",
+    "city": "Washington",
     "lat": 40.167347,
     "lng": -80.246273,
-    "description": "Liberty Pole Spirits is a craft distillery in West Virginia.",
+    "description": "Liberty Pole Spirits is a craft distillery in Washington, Pennsylvania.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -7996,12 +7884,12 @@
   {
     "name": "Lucky Sign Spirits Distillery",
     "slug": "lucky-sign-spirits-distillery",
-    "state": "West Virginia",
-    "stateSlug": "west-virginia",
-    "city": "",
+    "state": "Pennsylvania",
+    "stateSlug": "pennsylvania",
+    "city": "Gibsonia",
     "lat": 40.621094,
     "lng": -79.900868,
-    "description": "Lucky Sign Spirits Distillery is a craft distillery in West Virginia.",
+    "description": "Lucky Sign Spirits Distillery is a craft distillery in Gibsonia, Pennsylvania.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -8068,10 +7956,10 @@
     "slug": "awildan-distilling",
     "state": "Wisconsin",
     "stateSlug": "wisconsin",
-    "city": "",
+    "city": "Sun Prairie",
     "lat": 43.140585,
     "lng": -89.262495,
-    "description": "Awildan Distilling is a craft distillery in Wisconsin.",
+    "description": "Awildan Distilling is a craft distillery in Sun Prairie, Wisconsin.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -8124,10 +8012,10 @@
     "slug": "doundrins-distilling",
     "state": "Wisconsin",
     "stateSlug": "wisconsin",
-    "city": "",
+    "city": "Cottage Grove",
     "lat": 43.077319,
     "lng": -89.205838,
-    "description": "Doundrins Distilling is a craft distillery in Wisconsin.",
+    "description": "Doundrins Distilling is a craft distillery in Cottage Grove, Wisconsin.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -8166,10 +8054,10 @@
     "slug": "great-northern-distillery-1161819176",
     "state": "Wisconsin",
     "stateSlug": "wisconsin",
-    "city": "",
+    "city": "Plover",
     "lat": 44.525876,
     "lng": -89.585376,
-    "description": "Great Northern Distillery is a craft distillery in Wisconsin.",
+    "description": "Great Northern Distillery is a craft distillery in Plover, Wisconsin.",
     "amenities": [
       "Tastings",
       "Tours"
@@ -8334,10 +8222,10 @@
     "slug": "pine-bluffs-distilling",
     "state": "Wyoming",
     "stateSlug": "wyoming",
-    "city": "",
+    "city": "Pine Bluffs",
     "lat": 41.193779,
     "lng": -104.0664,
-    "description": "Pine Bluffs Distilling is a craft distillery in Wyoming.",
+    "description": "Pine Bluffs Distilling is a craft distillery in Pine Bluffs, Wyoming.",
     "amenities": [
       "Tastings",
       "Tours"
