@@ -10,7 +10,7 @@
     "test:index": "node --test tests/index-quality.test.mjs"
   },
   "dependencies": {
-    "next": "15.5.20",
+    "next": "^15.5.28",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -21,6 +21,8 @@
     "typescript": "^5"
   },
   "overrides": {
-    "postcss": "8.5.19"
+    "postcss": "8.5.23",
+    "minimatch": "^11.0.1",
+    "undici": "7.30.1"
   }
 }
