@@ -103,10 +103,9 @@ export default function PrivacyPage() {
           Advertising and Analytics Status
         </h2>
         <p>
-          Google AdSense, Google Analytics, and Microsoft Clarity are not currently enabled. The Site
-          does not currently load their scripts or set their advertising or analytics cookies. A
+          We use Google Analytics (GA4) only after you accept via the consent control shown on this site. Google Analytics does not load, and sets no cookies, until you accept. If you decline or have not chosen, it never loads. When it runs, it collects standard page-view and usage data (pages visited, approximate location, device and browser information) so we can see which pages are useful. Advertising features, ad personalization, and Google signals are off. You can change or withdraw your choice at any time using the Privacy choices control shown on every page; withdrawing stops further collection and clears the analytics cookies we are able to clear. Global Privacy Control and Do Not Track signals are treated as a decline. Microsoft Clarity and advertising trackers are not used. A
           publisher identifier may remain in ads.txt or public metadata solely for ownership
-          verification. Google's general privacy information is available at:{" "}
+          verification. Google AdSense and Microsoft Clarity are not enabled, and no advertising cookies are set. Google's general privacy information is available at:{" "}
           <a
             href="https://www.google.com/intl/en/policies/privacy/"
             style={{ color: "#2563eb", textDecoration: "none" }}
@@ -115,10 +114,6 @@ export default function PrivacyPage() {
           >
             https://www.google.com/intl/en/policies/privacy/
           </a>
-        </p>
-        <p style={{ marginTop: "1rem" }}>
-          If optional advertising or analytics is enabled later, we will update this policy and add
-          any required consent and opt-out controls before activation.
         </p>
         <p style={{ marginTop: "1rem" }}>
           General advertising preference resources include:
@@ -157,7 +152,7 @@ export default function PrivacyPage() {
           Cookies
         </h2>
         <p>
-          The Site does not currently set optional advertising or analytics cookies. Hosting and
+          If you accept analytics, Google Analytics sets cookies such as _ga to distinguish visits; declining sets no analytics cookies. The Site does not set advertising cookies. Hosting and
           security providers may use essential mechanisms needed to deliver and protect the Site.
           External websites you choose to visit have their own cookie and privacy practices.
         </p>
@@ -263,7 +258,7 @@ export default function PrivacyPage() {
         </h2>
         <p>
           Hosting and security providers may process limited request metadata to operate the Site.
-          Google AdSense and optional analytics services are not currently enabled. External sites
+          Google AdSense is not currently enabled. Optional analytics (Google Analytics) runs only with visitor consent, as described in this policy. External sites
           linked from the directory are governed by their own privacy practices.
         </p>
 

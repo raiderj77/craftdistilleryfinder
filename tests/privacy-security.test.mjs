@@ -10,9 +10,16 @@ const layout = read("src/app/layout.tsx");
 const privacy = read("src/app/privacy/page.tsx");
 const policy = read("next.config.ts");
 
-test("optional advertising and analytics do not execute", () => {
-  assert.doesNotMatch(layout, /googletagmanager|googlesyndication\.com\/pagead|clarity\.ms|Cookiebot/i);
-  assert.doesNotMatch(policy, /unsafe-eval|googletagmanager|googlesyndication|clarity\.ms|Cookiebot/i);
+test("optional analytics is consent- and env-gated", () => {
+  const component = read("src/components/AnalyticsConsent.tsx");
+  assert.match(layout, /AnalyticsConsent/);
+  assert.doesNotMatch(layout, /googlesyndication|clarity\.ms|Cookiebot/i);
+  assert.doesNotMatch(policy, /unsafe-eval|googlesyndication|clarity\.ms|Cookiebot/i);
+  assert.match(policy, /googletagmanager\.com/);
+  assert.match(component, /NEXT_PUBLIC_GA_ID/);
+  assert.match(component, /localStorage/);
+  assert.match(component, /analytics_storage: 'denied'/);
+  assert.ok(component.indexOf("localStorage.getItem") < component.indexOf("googletagmanager.com/gtag/js"));
 });
 
 test("obsolete tracking cookie middleware is absent", () => {
@@ -21,7 +28,9 @@ test("obsolete tracking cookie middleware is absent", () => {
 });
 
 test("public disclosures and publisher verification match production", () => {
-  assert.match(privacy, /not\s+currently\s+enabled/i);
+  assert.match(privacy, /only after you accept/i);
+  assert.match(privacy, /withdraw/i);
+  assert.doesNotMatch(privacy, /Google Analytics[^.]*not currently enabled/i);
   assert.match(read("public/ads.txt"), /pub-7171402107622932/);
 });
 

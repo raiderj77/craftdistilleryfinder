@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
+import AnalyticsConsent from '../components/AnalyticsConsent';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: ['400','600','700','800'] });
 const sourceSerif = Source_Serif_4({ subsets: ['latin'], variable: '--font-body', display: 'swap', weight: ['300','400','600','700'] });
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        <AnalyticsConsent />
       </body>
     </html>
   );
