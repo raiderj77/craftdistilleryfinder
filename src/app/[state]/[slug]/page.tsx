@@ -56,8 +56,9 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const { state, slug } = await params;
   const location = locations.find((l) => l.stateSlug === state && l.slug === slug);
   const stateName = getStateName(state);
+  const titleLocation = location ? (location.city ? `${location.city}, ${location.state}` : location.state) : stateName;
   return {
-    title: `${location?.name ?? 'Craft Distillery'} , Distillery in ${stateName}`,
+    title: location ? `${location.name} | ${titleLocation}` : `Craft Distillery in ${stateName}`,
     description: location ? `Imported location record for ${location.name} in ${stateName}. Verify current visitor details directly.` : `Imported distillery location record in ${stateName}.`,
     alternates: { canonical: `https://craftdistilleryfinder.com/${state}/${slug}` },
     robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
