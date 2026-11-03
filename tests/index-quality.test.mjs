@@ -17,6 +17,14 @@ test('thin state and listing routes remain noindex,follow', () => {
   }
 });
 
+test('venue titles use the venue name and city/state without repeating the category', () => {
+  const detail = read('src/app/[state]/[slug]/page.tsx');
+
+  assert.match(detail, /const titleLocation = location \? \(location\.city \? `\$\{location\.city\}, \$\{location\.state\}` : location\.state\) : stateName;/);
+  assert.match(detail, /title: location \? `\$\{location\.name\} \| \$\{titleLocation\}`/);
+  assert.doesNotMatch(detail, /, Distillery in \$\{stateName\}/);
+});
+
 test('directory-only browse hubs remain noindex when present', () => {
   for (const path of ['src/app/browse/page.tsx', 'src/app/browse-states/page.tsx']) {
     const url = new URL(`../${path}`, import.meta.url);
